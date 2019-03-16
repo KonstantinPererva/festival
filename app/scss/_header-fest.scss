@@ -17,14 +17,21 @@
     z-index: 1;
     padding: 0 60px;
 
+    @media (max-width: 1130px) {
+      height: 60px;
+    }
+
     @media (max-width: 992px) {
       padding: 0 30px;
+    }
+
+    @media (max-width: 767px) {
+      padding: 0 15px;
     }
   }
 
   &__right {
-    display: flex;
-    align-items: center;
+
   }
 
   &-logo {
@@ -35,10 +42,15 @@
       text-decoration: none;
       color: #000;
       outline: none;
+
+      @media (max-width: 767px) {
+        width: 180px;
+      }
     }
 
     &__img {
       display: block;
+      width: 100%;
     }
   }
 
@@ -68,6 +80,10 @@
         }
       }
     }
+
+    @media (max-width: 1130px) {
+      display: none;
+    }
   }
 
   &-btn-menu {
@@ -78,6 +94,10 @@
     padding: 25px 0 0 20px;
     cursor: pointer;
     display: none;
+
+    @media (max-width: 1130px) {
+      display: block;
+    }
 
     &__line {
       position: absolute;
@@ -119,61 +139,9 @@
     right: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.65);
-    opacity: 0;
+    opacity: 1;
     -webkit-transition: opacity .25s;
     -o-transition: opacity .25s;
     transition: opacity .25s;
   }
-
-  //
-  //&-languages {
-  //  position: absolute;
-  //  width: 24px;
-  //  height: 23px;
-  //  right: 0;
-  //  top: 0;
-  //  bottom: 0;
-  //  margin: auto;
-  //
-  //  &__sel {
-  //    display: block;
-  //    width: 24px;
-  //    height: 23px;
-  //    line-height: 23px;
-  //    color: #fff;
-  //    font-size: 13px;
-  //    font-family: 'BronnRust-BoldFill', arial,sans-serif;
-  //    text-decoration: none;
-  //    cursor: pointer;
-  //
-  //    &:after {
-  //      content: '';
-  //      width: 0;
-  //      height: 0;
-  //      border-style: solid;
-  //      border-width: 5px 4px 0 4px;
-  //      border-color: currentColor transparent transparent transparent;
-  //      position: absolute;
-  //      top: -3px;
-  //      bottom: 0;
-  //      margin: auto;
-  //      left: 100%;
-  //    }
-  //  }
-  //
-  //  &__list {
-  //    list-style: none;
-  //    padding: 0;
-  //    margin: 0;
-  //    display: none;
-  //  }
-  //
-  //  &__link {
-  //    display: block;
-  //    color: #fff;
-  //    font-size: 13px;
-  //    font-family: 'BronnRust-BoldFill', arial,sans-serif;
-  //    text-decoration: none;
-  //  }
-  //}
 }

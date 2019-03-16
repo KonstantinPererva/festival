@@ -244,11 +244,12 @@ textarea {
   outline: none;
   position: relative;
   top: 2px; }
-  @media (hover: hover) {
-    .footer-light-btn-feedback:hover, .age-answer-options-yes:hover, .age-answer-options-no:hover {
-      text-decoration: none;
-      cursor: pointer;
-      outline: none; } }
+  .footer-light-btn-feedback:hover, .age-answer-options-yes:hover, .age-answer-options-no:hover {
+    outline: none; }
+    @media (hover: hover) {
+      .footer-light-btn-feedback:hover, .age-answer-options-yes:hover, .age-answer-options-no:hover {
+        text-decoration: none;
+        cursor: pointer; } }
   .footer-light-btn-feedback:focus, .age-answer-options-yes:focus, .age-answer-options-no:focus, .footer-light-btn-feedback:active, .age-answer-options-yes:active, .age-answer-options-no:active {
     text-decoration: none;
     outline: none; }
@@ -372,8 +373,11 @@ html, body {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 16px 30px;
+    padding: 16px 60px;
     margin: 0 auto; }
+    @media (max-width: 992px) {
+      .footer-light__hold {
+        padding: 16px 30px; } }
     @media (max-width: 767px) {
       .footer-light__hold {
         display: block;
@@ -475,18 +479,21 @@ html, body {
       .main_bg-wave {
         -webkit-background-size: 150% 150%;
                 background-size: 150%; } }
-    @media (max-width: 1100px) {
+    @media (max-width: 992px) {
       .main_bg-wave {
         background: none; } }
 
 .title {
   padding: 3.3% 30px 0; }
+  @media (max-width: 1440px) {
+    .title {
+      padding: 2% 30px 0; } }
   .title-logo {
     width: 448px;
     margin: 0 auto; }
-    @media (max-width: 1260px) {
+    @media (max-width: 1440px) {
       .title-logo {
-        width: 350px; } }
+        width: 300px; } }
     @media (max-width: 768px) {
       .title-logo {
         width: 50%; } }

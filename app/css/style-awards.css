@@ -244,11 +244,12 @@ textarea {
   outline: none;
   position: relative;
   top: 2px; }
-  @media (hover: hover) {
-    .footer-btn-feedback:hover {
-      text-decoration: none;
-      cursor: pointer;
-      outline: none; } }
+  .footer-btn-feedback:hover {
+    outline: none; }
+    @media (hover: hover) {
+      .footer-btn-feedback:hover {
+        text-decoration: none;
+        cursor: pointer; } }
   .footer-btn-feedback:focus, .footer-btn-feedback:active {
     text-decoration: none;
     outline: none; }
@@ -373,9 +374,17 @@ html, body {
     @media (max-width: 1440px) {
       .footer__hold {
         padding: 80px 60px 50px; } }
+    @media (max-width: 1024px) {
+      .footer__hold {
+        padding: 60px 60px 40px; } }
     @media (max-width: 992px) {
       .footer__hold {
-        padding: 80px 30px 50px; } }
+        padding: 60px 30px 40px; } }
+    @media (max-width: 767px) {
+      .footer__hold {
+        display: block;
+        text-align: center;
+        padding: 60px 0 40px; } }
   .footer__right {
     padding: 60px 0 0; }
   .footer__title {
@@ -510,18 +519,21 @@ html, body {
       .main_bg-wave {
         -webkit-background-size: 150% 150%;
                 background-size: 150%; } }
-    @media (max-width: 1100px) {
+    @media (max-width: 992px) {
       .main_bg-wave {
         background: none; } }
 
 .title {
   padding: 3.3% 30px 0; }
+  @media (max-width: 1440px) {
+    .title {
+      padding: 2% 30px 0; } }
   .title-logo {
     width: 448px;
     margin: 0 auto; }
-    @media (max-width: 1260px) {
+    @media (max-width: 1440px) {
       .title-logo {
-        width: 350px; } }
+        width: 300px; } }
     @media (max-width: 768px) {
       .title-logo {
         width: 50%; } }
@@ -561,18 +573,15 @@ html, body {
     height: 80px;
     z-index: 1;
     padding: 0 60px; }
+    @media (max-width: 1130px) {
+      .header-fest__hold {
+        height: 60px; } }
     @media (max-width: 992px) {
       .header-fest__hold {
         padding: 0 30px; } }
-  .header-fest__right {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    @media (max-width: 767px) {
+      .header-fest__hold {
+        padding: 0 15px; } }
   .header-fest-logo__link {
     width: 230px;
     position: relative;
@@ -580,8 +589,12 @@ html, body {
     text-decoration: none;
     color: #000;
     outline: none; }
+    @media (max-width: 767px) {
+      .header-fest-logo__link {
+        width: 180px; } }
   .header-fest-logo__img {
-    display: block; }
+    display: block;
+    width: 100%; }
   .header-fest-menu__list {
     list-style: none;
     padding: 0;
@@ -609,6 +622,9 @@ html, body {
     @media (hover: hover) {
       .header-fest-menu__link:hover {
         color: #ff8f1c; } }
+  @media (max-width: 1130px) {
+    .header-fest-menu {
+      display: none; } }
   .header-fest-btn-menu {
     position: relative;
     float: right;
@@ -617,6 +633,9 @@ html, body {
     padding: 25px 0 0 20px;
     cursor: pointer;
     display: none; }
+    @media (max-width: 1130px) {
+      .header-fest-btn-menu {
+        display: block; } }
     .header-fest-btn-menu__line {
       position: absolute;
       display: block;
@@ -650,7 +669,7 @@ html, body {
     right: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.65);
-    opacity: 0;
+    opacity: 1;
     -webkit-transition: opacity .25s;
     -o-transition: opacity .25s;
     transition: opacity .25s; }
@@ -661,16 +680,18 @@ html, body {
   margin: 0 auto; }
   .awards__video {
     margin-top: -80px; }
-    @media (max-width: 992px) {
-      .awards__video {
-        padding: 0 30px; } }
     @media (max-width: 1440px) {
       .awards__video {
         width: 70%;
         margin: -80px auto 0; } }
     @media (max-width: 992px) {
       .awards__video {
-        width: auto; } }
+        width: auto;
+        padding: 0 30px; } }
+    @media (max-width: 767px) {
+      .awards__video {
+        margin-top: 0;
+        padding: 0; } }
   .awards-apple {
     position: absolute;
     top: -30%;
@@ -682,6 +703,9 @@ html, body {
     @media (max-width: 1440px) {
       .awards-apple {
         right: 2%; } }
+    @media (max-width: 767px) {
+      .awards-apple {
+        top: -25%; } }
   .awards-heard {
     position: absolute;
     top: -15%;
@@ -694,6 +718,7 @@ html, body {
       .awards-heard {
         right: 20%; } }
   .awards-new {
+    display: block;
     position: absolute;
     top: -30%;
     left: -4%;
@@ -703,20 +728,27 @@ html, body {
             background-size: contain; }
     @media (max-width: 1440px) {
       .awards-new {
-        top: -37%;
-        left: 3%; } }
+        top: -25%;
+        left: 3%;
+        padding: 15% 0 0 25%; } }
     @media (max-width: 1152px) {
       .awards-new {
-        top: -31%;
-        padding: 15% 0 0 25%; } }
+        top: -31%; } }
     @media (max-width: 1100px) {
       .awards-new {
         top: -26%; } }
     @media (max-width: 992px) {
       .awards-new {
         padding: 20% 0 0 33%;
-        top: -30%;
-        left: -2%; } }
+        top: -27%;
+        left: -1%; } }
+    @media (max-width: 767px) {
+      .awards-new {
+        position: relative;
+        top: auto;
+        left: auto;
+        padding: 70px;
+        margin: -30px 0 30px; } }
 
 .video {
   position: relative;
@@ -735,10 +767,13 @@ html, body {
 .timer {
   position: relative;
   padding: 60px 0; }
-  @media (max-width: 1100px) {
+  @media (max-width: 992px) {
     .timer {
       background: #ff8f1c;
       margin-top: 60px; } }
+  @media (max-width: 767px) {
+    .timer {
+      margin-top: 0; } }
   .timer-title__text {
     display: block;
     font-size: 32px;
@@ -746,10 +781,18 @@ html, body {
     font-family: "Bronn Rust Bold", sans-serif;
     color: #253683;
     text-align: center; }
+    @media (max-width: 1440px) {
+      .timer-title__text {
+        font-size: 30px;
+        line-height: 34px; } }
     @media (max-width: 992px) {
       .timer-title__text {
         font-size: 28px;
         line-height: 34px; } }
+    @media (max-width: 767px) {
+      .timer-title__text {
+        font-size: 20px;
+        line-height: 28px; } }
   .timer-star {
     position: absolute;
     right: 80px;
@@ -759,7 +802,10 @@ html, body {
     background: url("../images/star.png") no-repeat center;
     -webkit-background-size: contain;
             background-size: contain; }
-    @media (max-width: 1100px) {
+    @media (max-width: 1024px) {
+      .timer-star {
+        right: 60px; } }
+    @media (max-width: 992px) {
       .timer-star {
         display: none; } }
 
@@ -789,6 +835,12 @@ html, body {
     -webkit-background-size: contain;
             background-size: contain;
     margin: 0 8px; }
+    @media (max-width: 767px) {
+      .js-timer__separator {
+        top: -10px;
+        width: 12px;
+        height: 12px;
+        margin: 0; } }
   .js-timer__item {
     position: relative;
     -webkit-flex-shrink: 0;
@@ -803,11 +855,21 @@ html, body {
       color: #fff;
       text-align: center;
       width: 150px; }
+      @media (max-width: 1440px) {
+        .js-timer__item span {
+          font-size: 76px;
+          line-height: 76px;
+          width: 130px; } }
       @media (max-width: 992px) {
         .js-timer__item span {
           font-size: 68px;
           line-height: 68px;
           width: 118px; } }
+      @media (max-width: 767px) {
+        .js-timer__item span {
+          font-size: 28px;
+          line-height: 28px;
+          width: 56px; } }
     .js-timer__item p {
       position: absolute;
       bottom: 0;
@@ -820,8 +882,16 @@ html, body {
       color: #253683;
       text-align: center;
       margin: 0; }
+      @media (max-width: 1440px) {
+        .js-timer__item p {
+          width: 130px; } }
       @media (max-width: 992px) {
         .js-timer__item p {
           font-size: 13px;
           line-height: 17px;
           width: 118px; } }
+      @media (max-width: 767px) {
+        .js-timer__item p {
+          font-size: 10px;
+          line-height: 15px;
+          width: 56px; } }

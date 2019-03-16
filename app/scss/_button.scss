@@ -11,10 +11,11 @@
   top: 2px;
 
   &:hover {
+    outline: none;
+
     @media (hover: hover) {
       text-decoration: none;
       cursor: pointer;
-      outline: none;
     }
   }
 
