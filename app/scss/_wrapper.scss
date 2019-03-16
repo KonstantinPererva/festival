@@ -1,0 +1,12 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  overflow: hidden;
+
+  &_bg-red {
+    background: url(../images/bg-red.png);
+    background-size: 50%;
+  }
+}

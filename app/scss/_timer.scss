@@ -1,0 +1,39 @@
+.timer {
+  position: relative;
+  padding: 60px 0;
+
+  @media (max-width: 1100px) {
+    background: $c-orange;
+    margin-top: 60px;
+  }
+
+  &-title {
+    &__text {
+      display: block;
+      font-size: 32px;
+      line-height: 36px;
+      font-family: $ff-bb;
+      color: #253683;
+      text-align: center;
+
+      @media (max-width: 992px) {
+        font-size: 28px;
+        line-height: 34px;
+      }
+    }
+  }
+
+  &-star {
+    position: absolute;
+    right: 80px;
+    top: 100px;
+    display: block;
+    padding: 8% 0 0 8%;
+    background: url("../images/star.png") no-repeat center;
+    background-size: contain;
+
+    @media (max-width: 1100px) {
+      display: none;
+    }
+  }
+}

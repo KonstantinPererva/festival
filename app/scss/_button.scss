@@ -1,0 +1,25 @@
+%button {
+  transition: all .15s;
+  text-decoration: none;
+  user-select: none;
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  position: relative;
+  top: 2px;
+
+  &:hover {
+    @media (hover: hover) {
+      text-decoration: none;
+      cursor: pointer;
+      outline: none;
+    }
+  }
+
+  &:focus, &:active {
+    text-decoration: none;
+    outline: none;
+  }
+}

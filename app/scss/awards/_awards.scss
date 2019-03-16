@@ -1,0 +1,77 @@
+.awards {
+  position: relative;
+  max-width: 1433px;
+  margin: 0 auto;
+
+  &__video {
+    margin-top: -80px;
+
+    @media (max-width: 992px) {
+      padding: 0 30px;
+    }
+
+    @media (max-width: 1440px) {
+      width: 70%;
+      margin: -80px auto 0;
+    }
+
+    @media (max-width: 992px) {
+      width: auto;
+    }
+  }
+
+  &-apple {
+    position: absolute;
+    top: -30%;
+    right: -15%;
+    padding: 10% 0 0 10%;
+    background: url(../../images/apple.png) no-repeat center;
+    background-size: contain;
+
+    @media (max-width: 1440px) {
+      right: 2%;
+    }
+  }
+
+  &-heard{
+    position: absolute;
+    top: -15%;
+    right: 25%;
+    padding: 5% 0 0 5%;
+    background: url(../../images/heard.png) no-repeat center;
+    background-size: contain;
+
+    @media (max-width: 992px) {
+      right: 20%;
+    }
+  }
+
+  &-new{
+    position: absolute;
+    top: -30%;
+    left: -4%;
+    padding: 19% 0 0 30%;
+    background: url(../../images/new.png) no-repeat center;
+    background-size: contain;
+
+    @media (max-width: 1440px) {
+      top: -37%;
+      left: 3%;
+    }
+
+    @media (max-width: 1152px) {
+      top: -31%;
+      padding: 15% 0 0 25%;
+    }
+
+    @media (max-width: 1100px) {
+      top: -26%;
+    }
+
+    @media (max-width: 992px) {
+      padding: 20% 0 0 33%;
+      top: -30%;
+      left: -2%;
+    }
+  }
+}

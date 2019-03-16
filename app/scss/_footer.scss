@@ -1,0 +1,147 @@
+.footer {
+  background: #000;
+  overflow: hidden;
+
+  &__hold {
+    max-width: 1433px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 0 50px;
+
+    @media (max-width: 1440px) {
+      padding: 80px 60px 50px;
+    }
+
+    @media (max-width: 992px) {
+      padding: 80px 30px 50px;
+    }
+  }
+
+  &__right {
+    padding: 60px 0 0;
+  }
+
+  &__title {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 13px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: $ff-bb;
+    margin: 0 0 15px;
+    padding: 5px 0;
+    transition: .15s;
+
+    &:hover, &:active {
+      @media (hover: hover) {
+        color: $c-orange;
+      }
+    }
+  }
+
+  &-btn-feedback {
+    @extend %button;
+    display: inline-flex;
+    border: 2px solid #fff;
+    height: 32px;
+    margin: 0 0 50px;
+
+    &:hover, &:active {
+      @media (hover: hover) {
+        background: #fff;
+        cursor: pointer;
+      }
+      
+      & .footer-btn-feedback__text {
+        color: #000;
+      }
+    }
+
+    &__text {
+      display: flex;
+      align-items: center;
+      color: #fff;
+      text-transform: uppercase;
+      font-family: $ff-bb;
+      font-size: 12px;
+      text-decoration: none;
+    }
+  }
+}
+
+.soc-net-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  &__item {
+    display: inline-block;
+    margin: 0 18px 0 0;
+  }
+
+  &__link {
+    text-decoration: none;
+    outline: none;
+    display: block;
+    width: 25px;
+    height: 25px;
+    transform: scale3d(1,1,1);
+    transition: transform .2s;
+
+    &:hover {
+      @media (hover: hover) {
+        transform: scale3d(1.25,1.25,1.25);
+      }
+    }
+  }
+
+  &__img {
+    width: 25px;
+  }
+}
+
+.logo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  &__item {
+    display: inline-block;
+    margin: 0 10px 0 0;
+    vertical-align: middle;
+  }
+
+  &__link {
+    display: inline-block;
+    overflow: hidden;
+    transform: scale3d(1,1,1);
+    transition: transform .2s;
+
+    &:hover {
+      @media (hover: hover) {
+        transform: scale3d(1.25,1.25,1.25);
+      }
+    }
+
+    &_sziget {
+      width: 100px;
+    }
+  }
+
+  &__img {
+    &_cider {
+      width: 86px;
+    }
+
+    &_sziget {
+      width: 150px;
+      margin: 0 0 0 -25px;
+    }
+
+    &_oddee {
+      width: 84px;
+      height: 24px;
+    }
+  }
+}
