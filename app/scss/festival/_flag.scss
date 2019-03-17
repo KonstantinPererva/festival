@@ -1,0 +1,31 @@
+.flag {
+  text-align: center;
+  padding: 100px 0 80px;
+
+  @media screen and (max-width: 1440px) {
+    padding: 70px 0 50px;
+  }
+
+  @media screen and (max-width: 1366px) {
+    padding: 50px 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 30px 0;
+  }
+
+  &__wrap-img {
+    position: relative;
+    display: inline-block;
+    padding: 22.4% 0 0 70%;
+
+  }
+
+  &__img {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    vertical-align: bottom;
+  }
+}

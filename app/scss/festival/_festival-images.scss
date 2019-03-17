@@ -1,0 +1,47 @@
+.festival-images {
+  overflow: hidden;
+
+  &__list {
+    padding: 0;
+    margin: 0 0 0 -8%;
+    list-style: none;
+    white-space: nowrap;
+
+    @media screen and (max-width: 767px) {
+      margin: 0;
+    }
+  }
+
+  &__item {
+    position: relative;
+    display: inline-block;
+    margin: 0 -.25em 0 -1px;
+    padding: 12% 0 0 18%;
+    vertical-align: bottom;
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+
+    &:first-child {
+
+      @media screen and (max-width: 767px) {
+        display: block;
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    vertical-align: bottom;
+
+    @media screen and (max-width: 767px) {
+      position: static;
+    }
+  }
+}

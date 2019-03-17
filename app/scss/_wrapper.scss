@@ -13,4 +13,8 @@
     background: url(../images/bg-red.png);
     background-size: 50%;
   }
+
+  &_bg-jury {
+    background: $c-red;
+  }
 }

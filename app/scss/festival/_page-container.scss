@@ -1,0 +1,41 @@
+.page-container {
+  padding: 0 8% 30px;
+
+  @media screen and (max-width: 1280px) {
+    padding: 0 5% 30px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 0 0 30px;
+  }
+
+  &__wrap-ico {
+    position: absolute;
+    padding: 18% 0 0 18%;
+
+    @media screen and (max-width: 1024px) {
+      padding: 12% 0 0 12%;
+    }
+
+    @media screen and (max-width: 1024px) {
+      padding: 7% 0 0 7%;
+    }
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+
+    &_bottom-left {
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  &__ico {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    vertical-align: bottom;
+  }
+}

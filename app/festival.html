@@ -1,296 +1,313 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <meta name="theme-color" content="#000000" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style-festival.css">
+
+    <title>Sziget festival</title>
 </head>
 <body>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MFX92MK"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+    <div class="wrapper">
+        <header class="header-fest">
+            <div class="header-fest__hold">
+                <div class="header-fest-logo">
+                    <a class="header-fest-logo__link" href="/">
+                        <img src="images/logo.png" alt="logo" class="header-fest-logo__img">
+                    </a>
+                </div>
 
-<header class="header-fest" data-header-color="black">
-    <div class="header-fest__hold">
-        <div class="header-logo">
-            <a class="header-logo__link" href="/">
-                <span class="header-logo__img header-logo__img_apps"></span>
-                <span class="header-logo__plus">+</span>
-                <span class="header-logo__img header-logo__img_sziget"></span>
-            </a>
-        </div>
-        <div class="header-fest__right" data-menu="container">
-            <nav class="header-fest-menu">
-                <ul class="header-fest-menu__list">
-                    <li class="header-fest-menu__item">
-                        <a href="/awards/" class="header-fest-menu__link">Про премiю</a>
-                    </li>
-                    <li class="header-fest-menu__item">
-                        <a href="/festival/" class="header-fest-menu__link">Sziget festival</a>
-                    </li>
-                    <li class="header-fest-menu__item">
-                        <a href="/rules/" class="header-fest-menu__link">Правила участi</a>
-                    </li>
-                    <!-- <li class="header-fest-menu__item">
-                        <a href="/registration/" class="header-fest-menu__link">Реєстрацiя</a>
-                    </li> -->
-                    <li class="header-fest-menu__item">
-                        <a href="/short_list/" class="header-fest-menu__link">Учасники</a>
-                    </li>
-                    <li class="header-fest-menu__item">
-                        <a href="/judges/" class="header-fest-menu__link">Журi</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="header-fest-languages">
-                <span class="header-fest-languages__sel">UA</span>
-                <ul class="header-fest-languages__list">
-                    <li class="header-fest-languages__item">
-                        <a href="#" class="header-fest-languages__link">RU</a>
-                    </li>
-                </ul>
+                <div class="header-fest__right">
+                    <nav class="header-fest-menu" data-menu="container">
+                        <ul class="header-fest-menu__list" data-menu="list">
+                            <li class="header-fest-menu__item">
+                                <a href="stage.html" class="header-fest-menu__link">Про премiю</a>
+                            </li>
+
+                            <li class="header-fest-menu__item">
+                                <a href="festival.html" class="header-fest-menu__link active">Sziget festival</a>
+                            </li>
+
+                            <li class="header-fest-menu__item">
+                                <a href="rules.html" class="header-fest-menu__link">Правила</a>
+                            </li>
+
+                            <li class="header-fest-menu__item">
+                                <a href="/short_list/" class="header-fest-menu__link">Номінанти</a>
+                            </li>
+
+                            <li class="header-fest-menu__item">
+                                <a href="jury.html" class="header-fest-menu__link">Експерти</a>
+                            </li>
+                        </ul>
+
+                        <span class="header-fest-btn-menu-close" data-menu="close">
+            <img src="images/svg/close.svg" alt="close" class="header-fest-btn-menu-close__ico" />
+          </span>
+                    </nav>
+
+                    <span class="header-fest__substrate" data-menu="substrate"></span>
+                </div>
+
+                <div class="header-fest-btn-menu" data-menu="open">
+        <span class="header-fest-btn-menu__line header-fest-btn-menu__line_first" data-menu="line-first">
+            <svg width="20" height="3" viewBox="0 0 20 3" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink">
+                <path id="line-first" fill-rule="evenodd" d="M 0 0L 20 0L 20 2L 0 2L 0 0Z"></path>
+            </svg>
+        </span>
+
+                    <span class="header-fest-btn-menu__line header-fest-btn-menu__line_middle" data-menu="line-middle">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="2px">
+              <path fill-rule="evenodd" d="M0.000,-0.000 L20.000,-0.000 L20.000,2.000 L0.000,2.000 L0.000,-0.000 Z"></path>
+          </svg>
+        </span>
+
+                    <span class="header-fest-btn-menu__line header-fest-btn-menu__line_last" data-menu="line-last">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="2px">
+              <path fill-rule="evenodd" d="M0.000,-0.000 L14.000,-0.000 L14.000,2.000 L0.000,2.000 L0.000,-0.000 Z"></path>
+          </svg>
+        </span>
+                </div>
             </div>
-        </div>
-        <div class="btn-menu" data-menu="button">
-  <span class="btn-menu__line btn-menu__line_first" data-menu="line-first">
-    <svg width="20" height="3" viewBox="0 0 20 3" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-        <path id="line-first" fill-rule="evenodd" d="M 0 0L 20 0L 20 2L 0 2L 0 0Z"></path>
-    </svg>
-</span>
-            <span class="btn-menu__line btn-menu__line_middle" data-menu="line-middle">
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="2px">
-    <path fill-rule="evenodd" d="M0.000,-0.000 L20.000,-0.000 L20.000,2.000 L0.000,2.000 L0.000,-0.000 Z"></path>
-</svg>
-</span>
-            <span class="btn-menu__line btn-menu__line_last" data-menu="line-last">
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="2px">
-    <path fill-rule="evenodd" d="M0.000,-0.000 L14.000,-0.000 L14.000,2.000 L0.000,2.000 L0.000,-0.000 Z"></path>
-</svg>
-</span>
-        </div>
-    </div>
-    <span class="header-fest__substrate" data-menu="substrate"></span>
-</header>
+        </header>
 
-<div class="page-container">
-    <div class="flag">
-        <div class="flag__wrap-img">
-            <img src="/images/head-fest.png" alt="flag" class="flag__img">
-        </div>
-    </div>
+        <div class="festival">
+            <div class="page-container">
+                <span class="new new_light"></span>
 
-    <div class="media-box">
-        <div class="media-box__hold">
-            <div class="media-box__wrap-img media-box__wrap-img_left">
-                <img src="/images/festival-1.jpg" alt="festival" class="media-box__img">
+                <div class="flag">
+                    <div class="flag__wrap-img">
+                        <img src="images/festival/flag.png" alt="flag" class="flag__img">
+                    </div>
+                </div>
             </div>
-            <div class="media-box__descr media-box__descr_right">
-                <span class="media-box__text">
-                    <span class="media-box__text media-box__text_bold">Sziget</span> — один із найбільших фестивалів у світі з 26-літньою історією. Це “Найкращий великий фестиваль Європи” та “Фестиваль з найкращим лайн-апом” за визнанням European Festival Awards та мільйонів фанів і артистів з усіх куточків планети. Він відбувається у розпал літа на Острові Свободи в центрі Будапешта.
-                </span>
+
+            <div class="page-container">
+                <div class="media-box">
+                    <div class="media-box__hold">
+                        <div class="media-box__wrap-img media-box__wrap-img_left">
+                            <img src="images/festival/festival-1.jpg" alt="festival" class="media-box__img">
+                        </div>
+                        <div class="media-box__descr media-box__descr_right">
+                        <span class="media-box__text">
+                            <span class="media-box__text media-box__text_bold">Sziget</span> — один із найбільших фестивалів у світі з 26-літньою історією. Це “Найкращий великий фестиваль Європи” та “Фестиваль з найкращим лайн-апом” за визнанням European Festival Awards та мільйонів фанів і артистів з усіх куточків планети. Він відбувається у розпал літа на Острові Свободи в центрі Будапешта.
+                        </span>
+                        </div>
+                    </div>
+                    <span class="media-box__arrow"></span>
+                </div>
+
+                <div class="media-box">
+                    <div class="media-box__hold">
+                        <div class="media-box__wrap-img media-box__wrap-img_right">
+                            <img src="images/festival/festival-2.jpg" alt="festival" class="media-box__img">
+                        </div>
+                        <div class="media-box__descr media-box__descr_left">
+                        <span class="media-box__text">
+                            <span class="media-box__text media-box__text_bold">Sziget</span> — значно більше, ніж музичний фестиваль. Це екстраординарна візуальна пригода, величезна територія спілкування, місце зустрічей і знайомств людей. Це тимчасова республіка з власними правилами та цінностями, власним суспільством, власним паспортом, на віддаленій території зеленого острова, в оточенні великого мегаполіса.
+                        </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="addition-wrap">
+                    <div class="addition">
+                        <span class="addition__text addition__text_white">Це відомі світові зірки на Main Stage і в лайн-апі різноманітних сцен, який припаде до смаку прихильникам усіх музичних стилів: електронної музики, панку і року, world music, блюзу і багатьох інших.</span>
+                    </div>
+
+                    <div class="addition">
+                        <span class="addition__text addition__text_light addition__text_marg">Пляж Sziget Beach, найоригінальніші «зруйновані» бари Будапешта Ruin Pubs Quarter, захопливі Color Party, Flag Party, Balloon Party, Beach Ball Party та Bubble Party — веселощі у форматі нон-стоп, мистецтво, спорт, розваги і тисячі занять на території Острова Свободи.</span>
+
+                        <span class="addition__text addition__text_bold">
+                            Все це Sziget, де щоденні вечірки починаються опівдні і тривають допоки знову не зійде сонце!
+                        </span>
+                    </div>
+
+                    <div class="page-container__wrap-ico page-container__wrap-ico_bottom-left">
+                        <img src="images/festival/poster.png" alt="icon" class="page-container__ico">
+                    </div>
+                </div>
             </div>
-        </div>
-        <span class="media-box__arrow"></span>
-    </div>
 
-    <div class="media-box">
-        <div class="media-box__hold">
-            <div class="media-box__wrap-img media-box__wrap-img_right">
-                <img src="/images/festival-2.jpg" alt="festival" class="media-box__img">
-            </div>
-            <div class="media-box__descr media-box__descr_left">
-                <span class="media-box__text">
-                    <span class="media-box__text media-box__text_bold">Sziget</span> — значно більше, ніж музичний фестиваль. Це екстраординарна візуальна пригода, величезна територія спілкування, місце зустрічей і знайомств людей. Це тимчасова республіка з власними правилами та цінностями, власним суспільством, власним паспортом, на віддаленій території зеленого острова, в оточенні великого мегаполіса.
-                </span>
-            </div>
-        </div>
-    </div>
-    <div class="addition-wrap">
-        <div class="addition addition_bg-green">
-            <span class="addition__text addition__text_white">Це відомі світові зірки на Main Stage і в лайн-апі різноманітних сцен, який припаде до смаку прихильникам усіх музичних стилів: електронної музики, панку і року, world music, блюзу і багатьох інших.</span>
-        </div>
-
-        <div class="addition">
-            <span class="addition__text addition__text_light addition__text_marg">Пляж Sziget Beach, найоригінальніші «зруйновані» бари Будапешта Ruin Pubs Quarter, захопливі Color Party, Flag Party, Balloon Party, Beach Ball Party та Bubble Party — веселощі у форматі нон-стоп, мистецтво, спорт, розваги і тисячі занять на території Острова Свободи.</span>
-            <span class="addition__text addition__text_bold">
-                Все це Sziget, де щоденні вечірки починаються опівдні і тривають допоки знову не зійде сонце!
-            </span>
-        </div>
-
-        <div class="page-container__wrap-ico page-container__wrap-ico_bottom-left">
-            <img src="/images/green-object.png" alt="icon" class="page-container__ico">
-        </div>
-    </div>
-</div>
-
-<div class="festivale-images">
-    <ul class="festivale-images__list">
-        <li class="festivale-images__item">
-            <img src="/images/img-1.jpg" alt="festivale" class="festivale-images__img">
-        </li>
-        <li class="festivale-images__item">
-            <img src="/images/img-2.jpg" alt="festivale" class="festivale-images__img">
-        </li>
-        <li class="festivale-images__item">
-            <img src="/images/img-3.jpg" alt="festivale" class="festivale-images__img">
-        </li>
-        <li class="festivale-images__item">
-            <img src="/images/img-4.jpg" alt="festivale" class="festivale-images__img">
-        </li>
-        <li class="festivale-images__item">
-            <img src="/images/img-5.jpg" alt="festivale" class="festivale-images__img">
-        </li>
-        <li class="festivale-images__item">
-            <img src="/images/img-6.jpg" alt="festivale" class="festivale-images__img">
-        </li>
-    </ul>
-</div>
-
-<div class="festivale-field festivale-field_yellow">
-    <ul class="festivale-field__list">
-        <li class="festivale-field__item">
-            <span class="festivale-field__text"><span class="festivale-field__mark">•</span> Sziget гостинно приймає фанів зі 100 країн світу та виконавців із близько 60 країн</span>
-        </li>
-        <li class="festivale-field__item">
-            <span class="festivale-field__text"><span class="festivale-field__mark">•</span> Протягом 7 днів Острів Свободи відвідує майже півмільйона людей</span>
-        </li>
-        <li class="festivale-field__item">
-            <span class="festivale-field__text"><span class="festivale-field__mark">•</span> На острові одночасно відпочиває до 90 000 сігетців щодня</span>
-        </li>
-    </ul>
-</div>
-
-<div class="festivale-field festivale-field_white">
-    <span class="festivale-field__title festivale-field__title_big">Sziget 2018 відбудеться 8-15 серпня!</span>
-    <span class="festivale-field__title festivale-field__title_yellow">На ньому виступлять</span>
-    <span class="festivale-field__text festivale-field__text_width">Kendrick Lamar, Arctic Monkeys, Lana Del Rey, Gorillaz, Kygo, Mumford &amp; Sons, Liam Gallagher, Stormzy, Bastille, The Kooks, MØ, Nick Murphy fka Chet Faker, Parov Stelar, Lykke Li, Clean Bandit, Wolf Alice, Nothing But Thieves, BØRNS, Fever Ray, &#8203;Everything Everything, Cigarettes After Sex, Gogol Bordello, Fink
-    </span>
-    <span class="festivale-field__text festivale-field__text_more">І багато інших артистів</span>
-</div>
-
-<div class="festivale-field festivale-field_green">
-    <span class="festivale-field__text">Скільки коштує квиток на Sziget?</span>
-    <div class="ticket">
-        <ul class="ticket__list">
-            <li class="ticket__item ticket__item_line">
-                <span class="ticket__title">Тижневий</span>
-                <span class="ticket__price">299 €</span>
-            </li>
-            <li class="ticket__item ticket__item_line">
-                <span class="ticket__title">П'ятиденний</span>
-                <span class="ticket__price">275 €</span>
-            </li>
-            <li class="ticket__item ticket__item_line">
-                <span class="ticket__title">Триденний</span>
-                <span class="ticket__price">179 €</span>
-            </li>
-            <li class="ticket__item">
-                <span class="ticket__title">Денний</span>
-                <span class="ticket__price">70 €</span>
-            </li>
-        </ul>
-    </div>
-    <div class="ticket__addition">
-        <span class="ticket__text">З часом вартість квитків підвищується. Детально про типи квитків, ціни та акції читайте <a href="https://szigetfestival.com/ua/tickets/category/entry-ticket" class="ticket__link">тут</a></span>
-    </div>
-</div>
-
-<div class="festivale-field festivale-field_white">
-    <span class="festivale-field__text festivale-field__text_width-sm">Як дістатися на Sziget, де зупинитися та інші корисні поради шукайте <a href="https://szigetfestival.com/ua/festival-info" class="festivale-field__link">тут</a></span>
-    <div class="soc-net">
-        <ul class="soc-net__list">
-            <li class="soc-net__item">
-                <a href="https://www.facebook.com/SzigetUA" target="_blank" class="soc-net__link"><img src="/images/facebook.png" alt="facebook" class="soc-net__ico"></a>
-            </li>
-            <li class="soc-net__item">
-                <a href="https://www.youtube.com/user/szigetofficial" target="_blank" class="soc-net__link"><img src="/images/youtube-red.png" alt="youtube" class="soc-net__ico"></a>
-            </li>
-            <li class="soc-net__item">
-                <a href="https://szigetfestival.com/ua/" target="_blank" class="soc-net__link"><img src="/images/szicon.png" alt="szicon" class="soc-net__ico"></a>
-            </li>
-        </ul>
-    </div>
-</div>
-
-<div class="video" data-video="container">
-    <div class="video__hold">
-        <div class="video__wrap">
-            <iframe src="https://www.youtube.com/embed/w6G26rLsryQ?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="encrypted-media" class="video__current" data-video="video"></iframe>
-        </div>
-    </div>
-</div>
-<footer class="footer-fest">
-    <div class="footer-fest__hold">
-        <div class="footer-fest__left">
-            <a style="text-decoration: none" target="_blank" href="/Official_rules_APPS_Music_&amp;_SZIGET_.pdf"><span class="footer-fest__title">Офіційні правила премії</span></a>
-            <div class="footer-fest__btn">
-                <a style="text-decoration: none" target="_blank" href="https://www.messenger.com/t/apps.cider/"><span class="footer-fest__btn-text">Зворотний зв`язок</span></a>
-            </div>
-            <div class="soc-net">
-                <ul class="soc-net-list">
-                    <li class="soc-net-list__item">
-                        <a href="https://www.instagram.com/apps.cider/" class="soc-net-list__link">
-                            <img src="/images/svg/instagram-logo.svg" alt="instagram" class="soc-net-list__img">
-                        </a>
+            <div class="festival-images">
+                <ul class="festival-images__list">
+                    <li class="festival-images__item">
+                        <img src="images/festival/img-1.jpg" alt="festival" class="festival-images__img">
                     </li>
-                    <li class="soc-net-list__item">
-                        <a href="https://www.facebook.com/apps.cider/" class="soc-net-list__link">
-                            <img src="/images/svg/facebook-logo.svg" alt="facebook" class="soc-net-list__img">
-                        </a>
+
+                    <li class="festival-images__item">
+                        <img src="images/festival/img-2.jpg" alt="festival" class="festival-images__img">
                     </li>
-                    <li class="soc-net-list__item">
-                        <a href="https://www.youtube.com/user/APPScider" class="soc-net-list__link">
-                            <img src="/images/svg/youtube.svg" alt="youtube" class="soc-net-list__img">
-                        </a>
+
+                    <li class="festival-images__item">
+                        <img src="images/festival/img-3.jpg" alt="festival" class="festival-images__img">
                     </li>
-                    <li class="soc-net-list__item">
-                        <a href="https://t.me/apps_cidre_music" class="soc-net-list__link">
-                            <img src="/images/svg/telegram.svg" alt="telegram" class="soc-net-list__img">
-                        </a>
+
+                    <li class="festival-images__item">
+                        <img src="images/festival/img-4.jpg" alt="festival" class="festival-images__img">
                     </li>
-                    <li class="soc-net-list__item">
-                        <a href="https://szigetfestival.com/ua/" class="soc-net-list__link">
-                            <img src="/images/sz.png" alt="sziget" class="soc-net-list__img">
-                        </a>
+
+                    <li class="festival-images__item">
+                        <img src="images/festival/img-5.jpg" alt="festival" class="festival-images__img">
+                    </li>
+
+                    <li class="festival-images__item">
+                        <img src="images/festival/img-6.jpg" alt="festival" class="festival-images__img">
                     </li>
                 </ul>
             </div>
+
+            <div class="festival-field festival-field_red">
+                <ul class="festival-field__list">
+                    <li class="festival-field__item">
+                        <span class="festival-field__text"><span class="festival-field__mark">•</span> Sziget гостинно приймає фанів зі 100 країн світу та виконавців із близько 60 країн</span>
+                    </li>
+                    <li class="festival-field__item">
+                        <span class="festival-field__text"><span class="festival-field__mark">•</span> Протягом 7 днів Острів Свободи відвідує майже півмільйона людей</span>
+                    </li>
+                    <li class="festival-field__item">
+                        <span class="festival-field__text"><span class="festival-field__mark">•</span> На острові одночасно відпочиває до 90 000 сігетців щодня</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="festival-field festival-field_white">
+                <span class="festival-field__title festival-field__title_big">Sziget 2018 відбудеться 8-15 серпня!</span>
+                <span class="festival-field__title festival-field__title_yellow">На ньому виступлять</span>
+                <span class="festival-field__text festival-field__text_width festival-field__text_black">Kendrick Lamar, Arctic Monkeys, Lana Del Rey, Gorillaz, Kygo, Mumford &amp; Sons, Liam Gallagher, Stormzy, Bastille, The Kooks, MØ, Nick Murphy fka Chet Faker, Parov Stelar, Lykke Li, Clean Bandit, Wolf Alice, Nothing But Thieves, BØRNS, Fever Ray, &#8203;Everything Everything, Cigarettes After Sex, Gogol Bordello, Fink</span>
+                <span class="festival-field__text festival-field__text_more">І багато інших артистів</span>
+            </div>
+
+            <div class="festival-field festival-field_orange">
+                <span class="festival-field__text">Скільки коштує квиток на Sziget?</span>
+
+
+            </div>
+
+            <div class="festival-field festival-field_white">
+                <span class="festival-field__text festival-field__text_width-sm">Як дістатися на Sziget, де зупинитися та інші корисні поради шукайте <a href="https://szigetfestival.com/ua/festival-info" class="festival-field__link">тут</a></span>
+
+                <div class="soc-net-page">
+                    <ul class="soc-net-list">
+                        <li class="soc-net-list__item">
+                            <a href="#" target="_blank" class="soc-net-link">
+                                <img src="images/inst.png" alt="instagram" class="soc-net-link__img">
+                            </a>
+                        </li>
+
+                        <li class="soc-net-list__item">
+                            <a href="#" target="_blank" class="soc-net-link">
+                                <img src="images/facebook.png" alt="facebook" class="soc-net-link__img">
+                            </a>
+                        </li>
+
+                        <li class="soc-net-list__item">
+                            <a href="#" target="_blank" class="soc-net-link">
+                                <img src="images/youtube-red.png" alt="youtube" class="soc-net-link__img"></a>
+                        </li>
+
+                        <li class="soc-net-list__item">
+                            <a href="#" target="_blank" class="soc-net-link">
+                                <img src="images/szicon.png" alt="szicon" class="soc-net-link__img">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="video-full">
+                <iframe src="https://www.youtube.com/embed/w6G26rLsryQ?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="encrypted-media" class="video-full__iframe"></iframe>
+            </div>
         </div>
-        <div class="footer-fest__right">
-            <ul class="logo-list">
-                <li class="logo-list__item">
-                    <a href="http://apps.ua/" target="_blank" class="logo-list__link logo-list__link_cider">
-                        <img src="/images/svg/apps-cider.svg" alt="cider" class="logo-list__img logo-list__img_cider">
+
+        <footer class="footer">
+            <div class="footer__hold">
+                <div class="footer__left">
+                    <div class="">
+                        <a target="_blank" href="/Official_rules_APPS_Music_&amp;_SZIGET_.pdf">
+                            <span class="footer__title">Офіційні правила премії</span>
+                        </a>
+                    </div>
+
+                    <a target="_blank" href="https://www.messenger.com/t/apps.cider/" class="footer-btn-feedback">
+                        <span class="footer-btn-feedback__text">Зворотний зв`язок</span>
                     </a>
-                </li>
-                <li class="logo-list__item">
-                    <a href="https://www.facebook.com/SzigetUA" target="_blank" class="logo-list__link logo-list__link_sziget">
-                        <img src="/images/svg/sziget-white.svg" alt="sziget" class="logo-list__img logo-list__img_sziget">
-                    </a>
-                </li>
-                <li class="logo-list__item">
-                    <a href="https://www.facebook.com/oddee.ukraine/" target="_blank" class="logo-list__link logo-list__link_oddee">
-                        <img src="/images/svg/oddee.svg" alt="oddee" class="logo-list__img logo-list__img_oddee">
-                    </a>
-                </li>
-            </ul>
-        </div>
+
+                    <div class="soc-net">
+                        <ul class="soc-net-list">
+                            <li class="soc-net-list__item">
+                                <a href="https://www.instagram.com/apps.cider/" class="soc-net-link">
+                                    <img src="images/svg/instagram.svg" alt="instagram" class="soc-net-link__ico">
+                                </a>
+                            </li>
+
+                            <li class="soc-net-list__item">
+                                <a href="https://www.facebook.com/apps.cider/" class="soc-net-link">
+                                    <img src="images/svg/facebook.svg" alt="facebook" class="soc-net-link__ico">
+                                </a>
+                            </li>
+
+                            <li class="soc-net-list__item">
+                                <a href="https://www.youtube.com/user/APPScider" class="soc-net-link">
+                                    <img src="images/svg/youtube.svg" alt="youtube" class="soc-net-link__ico">
+                                </a>
+                            </li>
+
+                            <li class="soc-net-list__item">
+                                <a href="https://t.me/apps_cidre_music" class="soc-net-link">
+                                    <img src="images/svg/telegram.svg" alt="telegram" class="soc-net-link__ico">
+                                </a>
+                            </li>
+
+                            <li class="soc-net-list__item">
+                                <a href="https://szigetfestival.com/ua/" class="soc-net-link">
+                                    <img src="images/sz.png" alt="sziget" class="soc-net-link__ico">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer__right">
+                    <ul class="logo-list">
+                        <li class="logo-list__item">
+                            <a href="http://apps.ua/" target="_blank" class="logo-list__link logo-list__link_cider">
+                                <img src="images/svg/apps-cider.svg" alt="cider" class="logo-list__img logo-list__img_cider">
+                            </a>
+                        </li>
+
+                        <li class="logo-list__item">
+                            <a href="https://www.facebook.com/SzigetUA" target="_blank" class="logo-list__link logo-list__link_sziget">
+                                <img src="images/svg/sziget-white.svg" alt="sziget" class="logo-list__img logo-list__img_sziget">
+                            </a>
+                        </li>
+
+                        <li class="logo-list__item">
+                            <a href="https://www.facebook.com/oddee.ukraine/" target="_blank" class="logo-list__link logo-list__link_oddee">
+                                <img src="images/svg/oddee.svg" alt="oddee" class="logo-list__img logo-list__img_oddee">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="warning">
+                <span class="warning__text">Надмірне вживання алкоголю шкодить вашому здоров’ю</span>
+
+                <span class="warning__ico-wrap">
+            <img src="images/warning.png" alt="warning" class="warning__ico">
+          </span>
+            </div>
+        </footer>
     </div>
-</footer>
 
-
-<script src="/js/bootstrap.min.js"></script>
-<script src="/js/common.js"></script>
-
-
-<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","1633058370341638");fbq("track","PageView");</script>
-<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1633058370341638&amp;ev=PageView&amp;noscript=1"></noscript>
-
-
+    <script src="js/main.js"></script>
 </body>
 </body>
 </html>

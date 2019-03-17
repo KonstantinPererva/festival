@@ -1,0 +1,17 @@
+.addition-wrap {
+  margin-top: -90px;
+  position: relative;
+  z-index: 1;
+
+  @media screen and (max-width: 1540px) {
+    margin-top: -130px;
+  }
+
+  @media screen and (max-width: 1440px) {
+    margin-top: -150px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    margin-top: -40px;
+  }
+}

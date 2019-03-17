@@ -1,0 +1,69 @@
+.addition {
+
+  &__text {
+    display: block;
+    width: 654px;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
+
+    @media screen and (max-width: 640px) {
+      width: 100%;
+      padding: 0 15px;
+      font-size: 15px;
+    }
+
+    @media screen and (max-width: 320px) {
+      font-size: 14px;
+    }
+
+    &_marg {
+      margin-bottom: 30px;
+
+      @media screen and (max-width: 360px) {
+        margin-top: -80px;
+      }
+    }
+
+    &_light {
+      font-family: $ff-os;
+    }
+
+    &_bold {
+      font-family: $ff-bb;
+      padding: 0 0 30px;
+
+      @media screen and (max-width: 640px) {
+        width: 100%;
+        padding: 0 15px;
+      }
+    }
+
+    &_white {
+      font-family: $ff-bb;
+      background: url(../../images/festival/bg-field.png) no-repeat;
+      background-size: 100%;
+      padding: 70px 100px;
+      color: #fff;
+      margin-bottom: 20px;
+
+      @media screen and (max-width: 640px) {
+        margin: 0;
+      }
+
+      @media screen and (max-width: 630px) {
+        background-size: 100% 100%;
+        padding: 92px 100px 132px;
+      }
+
+      @media screen and (max-width: 480px) {
+        padding: 106px 80px 150px;
+      }
+
+      @media screen and (max-width: 360px) {
+        padding: 120px 70px 190px;
+      }
+    }
+  }
+}
