@@ -297,6 +297,64 @@ html, body {
     -webkit-background-size: 50% 50%;
             background-size: 50%; }
 
+.new_awards {
+  display: block;
+  position: absolute;
+  top: -30%;
+  left: -4%;
+  padding: 19% 0 0 30%;
+  background: url(../images/new.png) no-repeat center;
+  -webkit-background-size: contain;
+          background-size: contain; }
+  @media (max-width: 1440px) {
+    .new_awards {
+      top: -25%;
+      left: 3%;
+      padding: 15% 0 0 25%; } }
+  @media (max-width: 1152px) {
+    .new_awards {
+      top: -31%; } }
+  @media (max-width: 1100px) {
+    .new_awards {
+      top: -26%; } }
+  @media (max-width: 992px) {
+    .new_awards {
+      padding: 20% 0 0 33%;
+      top: -27%;
+      left: -1%; } }
+  @media (max-width: 767px) {
+    .new_awards {
+      position: relative;
+      top: auto;
+      left: auto;
+      padding: 70px;
+      margin: -30px 0 30px; } }
+
+.new_rule {
+  display: block;
+  position: absolute;
+  left: 15%;
+  top: 0;
+  margin: 0 30px 0 0;
+  padding: 15% 0 0 25%;
+  background: url(../images/new.png) no-repeat center;
+  -webkit-background-size: contain;
+          background-size: contain; }
+  @media (max-width: 1440px) {
+    .new_rule {
+      left: 10%; } }
+  @media (max-width: 1024px) {
+    .new_rule {
+      left: 0;
+      padding: 20% 0 0 33%; } }
+  @media (max-width: 767px) {
+    .new_rule {
+      position: relative;
+      top: auto;
+      left: auto;
+      padding: 70px;
+      margin: 30px 0; } }
+
 .warning {
   display: -webkit-box;
   display: -webkit-flex;
@@ -417,6 +475,8 @@ html, body {
     .footer-btn-feedback:hover .footer-btn-feedback__text, .footer-btn-feedback:active .footer-btn-feedback__text {
       color: #000; }
     .footer-btn-feedback__text {
+      position: relative;
+      top: 1px;
       display: -webkit-box;
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -434,29 +494,56 @@ html, body {
 .soc-net-list {
   list-style: none;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
   .soc-net-list__item {
-    display: inline-block;
+    -webkit-flex-shrink: 0;
+        -ms-flex-negative: 0;
+            flex-shrink: 0;
     margin: 0 18px 0 0; }
-  .soc-net-list__link {
-    text-decoration: none;
-    outline: none;
+
+.soc-net-link {
+  text-decoration: none;
+  outline: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 25px;
+  height: 25px;
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  -o-transition: transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s; }
+  @media (hover: hover) {
+    .soc-net-link:hover {
+      -webkit-transform: scale3d(1.25, 1.25, 1.25);
+              transform: scale3d(1.25, 1.25, 1.25); } }
+  .soc-net-link__ico {
     display: block;
-    width: 25px;
-    height: 25px;
-    -webkit-transform: scale3d(1, 1, 1);
-            transform: scale3d(1, 1, 1);
-    -webkit-transition: -webkit-transform .2s;
-    transition: -webkit-transform .2s;
-    -o-transition: transform .2s;
-    transition: transform .2s;
-    transition: transform .2s, -webkit-transform .2s; }
-    @media (hover: hover) {
-      .soc-net-list__link:hover {
-        -webkit-transform: scale3d(1.25, 1.25, 1.25);
-                transform: scale3d(1.25, 1.25, 1.25); } }
-  .soc-net-list__img {
     width: 25px; }
+  .soc-net-link__img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%; }
 
 .logo-list {
   list-style: none;
@@ -522,6 +609,16 @@ html, body {
     @media (max-width: 992px) {
       .main_bg-wave {
         background: none; } }
+  .main_bg-pattern {
+    background: url(../images/pattern.png) no-repeat left bottom, url(../images/rainbow.png) no-repeat right -20px top 150px; }
+    @media (max-width: 1440px) {
+      .main_bg-pattern {
+        -webkit-background-size: auto, 20%;
+                background-size: auto, 20%; } }
+    @media (max-width: 1152px) {
+      .main_bg-pattern {
+        -webkit-background-size: 20%, 20%;
+                background-size: 20%, 20%; } }
 
 .title {
   padding: 3.3% 30px 0; }
@@ -618,10 +715,20 @@ html, body {
     padding: 10px 15px;
     -webkit-transition: .15s;
     -o-transition: .15s;
-    transition: .15s; }
-    @media (hover: hover) {
-      .header-fest-menu__link:hover {
-        color: #ff8f1c; } }
+    transition: .15s;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    outline: none; }
+    .header-fest-menu__link:hover, .header-fest-menu__link:active {
+      outline: none; }
+      @media (hover: hover) {
+        .header-fest-menu__link:hover, .header-fest-menu__link:active {
+          color: #ff8f1c;
+          outline: none; } }
+    .header-fest-menu__link.active {
+      color: #ff8f1c; }
   @media (max-width: 1130px) {
     .header-fest-menu {
       display: none; } }
@@ -717,38 +824,6 @@ html, body {
     @media (max-width: 992px) {
       .awards-heard {
         right: 20%; } }
-  .awards-new {
-    display: block;
-    position: absolute;
-    top: -30%;
-    left: -4%;
-    padding: 19% 0 0 30%;
-    background: url(../../images/new.png) no-repeat center;
-    -webkit-background-size: contain;
-            background-size: contain; }
-    @media (max-width: 1440px) {
-      .awards-new {
-        top: -25%;
-        left: 3%;
-        padding: 15% 0 0 25%; } }
-    @media (max-width: 1152px) {
-      .awards-new {
-        top: -31%; } }
-    @media (max-width: 1100px) {
-      .awards-new {
-        top: -26%; } }
-    @media (max-width: 992px) {
-      .awards-new {
-        padding: 20% 0 0 33%;
-        top: -27%;
-        left: -1%; } }
-    @media (max-width: 767px) {
-      .awards-new {
-        position: relative;
-        top: auto;
-        left: auto;
-        padding: 70px;
-        margin: -30px 0 30px; } }
 
 .video {
   position: relative;

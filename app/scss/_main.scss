@@ -29,4 +29,17 @@
       background: none;
     }
   }
+
+  &_bg-pattern {
+    background: url(../images/pattern.png) no-repeat left bottom,
+    url(../images/rainbow.png) no-repeat right -20px top 150px;
+
+    @media (max-width: 1440px) {
+      background-size: auto, 20%;
+    }
+
+    @media (max-width: 1152px) {
+      background-size: 20%, 20%;
+    }
+  }
 }

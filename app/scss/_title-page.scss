@@ -1,0 +1,27 @@
+.title-page {
+  &-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+  }
+
+  &_black {
+    flex-shrink: 0;
+    width: 260px;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../images/title-black.png) no-repeat center;
+    background-size: contain;
+  }
+
+  &__text {
+    font-size: 30px;
+    line-height: 34px;
+    color: #fff;
+    font-family: $ff-bb;
+  }
+}

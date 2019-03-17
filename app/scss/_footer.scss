@@ -69,6 +69,8 @@
     }
 
     &__text {
+      position: relative;
+      top: 1px;
       display: flex;
       align-items: center;
       color: #fff;
@@ -84,30 +86,41 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  align-items: center;
 
   &__item {
-    display: inline-block;
+    flex-shrink: 0;
     margin: 0 18px 0 0;
   }
+}
 
-  &__link {
-    text-decoration: none;
-    outline: none;
-    display: block;
-    width: 25px;
-    height: 25px;
-    transform: scale3d(1,1,1);
-    transition: transform .2s;
+.soc-net-link {
+  text-decoration: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  transform: scale3d(1,1,1);
+  transition: transform .2s;
 
-    &:hover {
-      @media (hover: hover) {
-        transform: scale3d(1.25,1.25,1.25);
-      }
+  &:hover {
+    @media (hover: hover) {
+      transform: scale3d(1.25,1.25,1.25);
     }
   }
 
-  &__img {
+  &__ico {
+    display: block;
     width: 25px;
+  }
+
+  &__img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
   }
 }
 

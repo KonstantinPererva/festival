@@ -73,11 +73,20 @@
       text-transform: uppercase;
       padding: 10px 15px;
       transition: .15s;
+      user-select: none;
+      outline: none;
 
-      &:hover {
+      &:hover, &:active {
+        outline: none;
+
         @media (hover: hover) {
           color: $c-orange;
+          outline: none;
         }
+      }
+
+      &.active {
+        color: $c-orange;
       }
     }
 
