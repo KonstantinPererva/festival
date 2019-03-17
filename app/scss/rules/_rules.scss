@@ -1,6 +1,10 @@
 .rules {
   padding: 3.3% 60px 100px;
 
+  @media (max-width: 767px) {
+    padding: 2% 15px 60px;
+  }
+
   &-list {
     max-width: 990px;
     margin: 0 auto;
@@ -9,10 +13,18 @@
   &-description-list {
     padding: 0;
     margin: 0;
+
+    @media (max-width: 767px) {
+      padding: 0 0 0 15px;
+    }
   }
 
   &-description-item {
     padding: 0 0 0 15px;
+
+    @media (max-width: 767px) {
+      padding: 0;
+    }
 
     &__text {
       font-size: 18px;
@@ -20,6 +32,11 @@
       font-family: $ff-os;
       font-weight: 400;
       margin: 0;
+
+      @media (max-width: 767px) {
+        font-size: 16px;
+        line-height: 29px;
+      }
 
       &_bold {
         font-weight: 700;
@@ -30,6 +47,10 @@
   &-item {
     position: relative;
     padding: 0 0 120px;
+
+    @media (max-width: 767px) {
+      padding: 0 0 80px;
+    }
 
     &:after {
       content: '';
@@ -43,6 +64,11 @@
       height: 61px;
       background: url(../../images/arrow-down.png) no-repeat center;
       background-size: contain;
+
+      @media (max-width: 767px) {
+        bottom: 30px;
+        width: 24px;
+      }
     }
 
     &:last-child:after {
@@ -57,6 +83,10 @@
 
     &__body {
       padding: 40px 0;
+
+      @media (max-width: 767px) {
+        padding: 20px 0 40px;
+      }
     }
 
     &__box {
@@ -64,6 +94,10 @@
       display: flex;
       align-items: center;
       justify-content: center;
+
+      @media (max-width: 767px) {
+        flex-direction: column;
+      }
     }
 
     &-index {
@@ -81,6 +115,11 @@
         line-height: 54px;
         font-family: $ff-bb;
         color: #fff;
+
+        @media (max-width: 767px) {
+          font-size: 39px;
+          line-height: 45px;
+        }
       }
     }
 
@@ -95,6 +134,11 @@
       background: url(../../images/bg-date.png) no-repeat center;
       background-size: contain;
       margin: 0 0 0 10px;
+
+      @media (max-width: 767px) {
+        position: relative;
+        left: auto;
+      }
 
       &__num {
         font-size: 20px;
@@ -111,15 +155,16 @@
         font-family: $ff-bb;
         color: #000;
       }
+
+      @media (max-width: 767px) {
+        padding: 10px 0;
+      }
     }
   }
 
   &-item-more {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
     padding: 40px 0 0;
+    text-align: center;
 
     &__link {
       text-decoration: underline;
@@ -135,12 +180,20 @@
     max-width: 990px;
     margin: 0 auto;
 
+    @media (max-width: 767px) {
+      margin: -40px auto 0;
+    }
+
     &__text {
       display: block;
       font-size: 20px;
       line-height: 25px;
       font-family: $ff-bb;
       color: $c-red;
+
+      @media (max-width: 767px) {
+        font-size: 18px;
+      }
     }
 
     &__link {
@@ -150,6 +203,10 @@
       font-family: $ff-bb;
       color: #000;
       transition: .15s;
+
+      @media (max-width: 767px) {
+        font-size: 18px;
+      }
 
       &:hover {
         @media (hover: hover) {

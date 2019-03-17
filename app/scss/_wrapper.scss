@@ -5,6 +5,10 @@
   min-height: 100%;
   overflow: hidden;
 
+  @media (max-width: 1130px) {
+    padding: 60px 0 0;
+  }
+
   &_bg-red {
     background: url(../images/bg-red.png);
     background-size: 50%;

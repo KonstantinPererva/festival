@@ -41,5 +41,10 @@
     @media (max-width: 1152px) {
       background-size: 20%, 20%;
     }
+
+    @media (max-width: 767px) {
+      background: url(../images/pattern.png) no-repeat left bottom;
+      background-size: 23%;
+    }
   }
 }

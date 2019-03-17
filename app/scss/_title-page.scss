@@ -5,6 +5,12 @@
     justify-content: center;
     align-items: center;
     height: 250px;
+
+    @media (max-width: 767px) {
+      display: block;
+      height: auto;
+      margin: 0 0 60px;
+    }
   }
 
   &_black {
@@ -16,6 +22,7 @@
     justify-content: center;
     background: url(../images/title-black.png) no-repeat center;
     background-size: contain;
+    margin: 0 auto;
   }
 
   &__text {

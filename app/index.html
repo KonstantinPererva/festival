@@ -21,11 +21,33 @@
         </div>
 
         <div class="age-wrapper">
-          <span id="age" class="age"></span>
+          <span id="age" class="age">
+            <div class="age-popup" data-popup="age">
+              <div class="age-container" data-container="age">
+                <div class="age-question">
+                  <span class="age-question__text">Вам є 18?</span>
+                </div>
+
+                <div class="age-answer-options">
+                  <div class="age-answer-options__button">
+                    <a href="awards.html" class="age-answer-options-yes">
+                      <span class="age-answer-options-yes__text">Так</span>
+                    </a>
+                  </div>
+
+                  <div class="age-answer-options__button">
+                    <button type="button" class="age-answer-options-no" data-answer="no">
+                      <span class="age-answer-options-no__text">Ні</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </span>
         </div>
       </main>
 
-      <footer-light class="footer-light">
+      <footer class="footer-light">
         <div class="footer-light__hold">
           <div class="footer-light__left">
             <a target="_blank" href="https://www.messenger.com/t/apps.cider/" class="footer-light-btn-feedback">
@@ -61,15 +83,35 @@
             <img src="images/warning.png" alt="warning" class="warning__ico">
           </span>
         </div>
-      </footer-light>
+      </footer>
 
       <div class="splash">
         <img src="images/splash.png" alt="splash" class="splash__img">
       </div>
     </div>
 
-    <script src="js/script.js"></script>
-    <script src="js/chunk.js"></script>
-    <script src="js/main.js"></script>
+    <script>
+        var button = document.querySelector('[data-answer="no"]');
+        var container = document.querySelector('[data-container="age"]');
+        var popup = document.querySelector('[data-popup="age"]');
+        var duration = 300;
+
+        button.onclick = function () {
+            container.style.transition = duration + 'ms';
+            container.style.opacity = '0';
+
+            setTimeout(function () {
+                popup.innerHTML = `
+                  <div class="age-not-allowed" data-allowed="not">
+                    <span class="age-not-allowed__text">Будемо раді бачити тебе, як тільки тобі виповниться 18 років</span>
+                  </div>
+                `;
+
+                var notAllowed = document.querySelector('[data-allowed="not"]');
+                notAllowed.style.transition = duration + 'ms';
+                notAllowed.style.opacity = '1';
+            }, duration)
+        }
+    </script>
   </body>
 </html>

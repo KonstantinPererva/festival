@@ -14,7 +14,7 @@
 </head>
 <body>
 <div class="wrapper">
-  <header class="header-fest" data-header-color="black">
+  <header class="header-fest">
     <div class="header-fest__hold">
       <div class="header-fest-logo">
         <a class="header-fest-logo__link" href="/">
@@ -22,9 +22,9 @@
         </a>
       </div>
 
-      <div class="header-fest__right" data-menu="container">
-        <nav class="header-fest-menu">
-          <ul class="header-fest-menu__list">
+      <div class="header-fest__right">
+        <nav class="header-fest-menu" data-menu="container">
+          <ul class="header-fest-menu__list" data-menu="list">
             <li class="header-fest-menu__item">
               <a href="awards.html" class="header-fest-menu__link">Про премiю</a>
             </li>
@@ -45,10 +45,16 @@
               <a href="/judges/" class="header-fest-menu__link">Експерти</a>
             </li>
           </ul>
+
+          <span class="header-fest-btn-menu-close" data-menu="close">
+            <img src="images/svg/close.svg" alt="close" class="header-fest-btn-menu-close__ico" />
+          </span>
         </nav>
+
+        <span class="header-fest__substrate" data-menu="substrate"></span>
       </div>
 
-      <div class="header-fest-btn-menu" data-menu="button">
+      <div class="header-fest-btn-menu" data-menu="open">
         <span class="header-fest-btn-menu__line header-fest-btn-menu__line_first" data-menu="line-first">
             <svg width="20" height="3" viewBox="0 0 20 3" version="1.1" xmlns="http://www.w3.org/2000/svg"
                  xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -69,8 +75,6 @@
         </span>
       </div>
     </div>
-
-    <span class="header-fest__substrate" data-menu="substrate"></span>
   </header>
 
   <main class="main main_bg-pattern">
@@ -306,7 +310,7 @@
   </footer>
 </div>
 
-<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
 

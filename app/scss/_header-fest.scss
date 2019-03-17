@@ -1,13 +1,22 @@
 .header-fest {
   flex-shrink: 0;
   position: relative;
-  z-index: 1;
+  z-index: 4;
   background: #000;
   border: 0;
   margin-bottom: 0;
   border-radius: 0;
 
+  @media (max-width: 1130px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 0 6px rgba(0,0,0,.25);
+  }
+
   &__hold {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,19 +28,16 @@
 
     @media (max-width: 1130px) {
       height: 60px;
+      padding: 0 45px 0 60px;
     }
 
     @media (max-width: 992px) {
-      padding: 0 30px;
+      padding: 0 15px 0 30px;
     }
 
     @media (max-width: 767px) {
-      padding: 0 15px;
+      padding: 0 0 0 15px;
     }
-  }
-
-  &__right {
-
   }
 
   &-logo {
@@ -55,12 +61,35 @@
   }
 
   &-menu {
+    @media (max-width: 1130px) {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      opacity: 0;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      transition: .25s;
+      z-index: 1001;
+    }
+
+    &.active {
+      opacity: 1;
+    }
+
     &__list {
       list-style: none;
       padding: 0;
       margin: 0;
       display: flex;
       align-items: center;
+
+      @media (max-width: 1130px) {
+        display: block;
+        text-align: center;
+      }
     }
 
     &__link {
@@ -88,10 +117,6 @@
       &.active {
         color: $c-orange;
       }
-    }
-
-    @media (max-width: 1130px) {
-      display: none;
     }
   }
 
@@ -139,18 +164,41 @@
         }
       }
     }
+
+    &-close {
+      display: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 60px;
+      height: 60px;
+      align-items: center;
+      justify-content: center;
+
+      @media (max-width: 1130px) {
+        display: flex;
+      }
+
+      &__ico {
+        display: block;
+      }
+    }
   }
 
   &__substrate {
-    display: block;
-    top: 60px;
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
     bottom: 0;
     right: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.65);
-    opacity: 1;
-    -webkit-transition: opacity .25s;
-    -o-transition: opacity .25s;
-    transition: opacity .25s;
+    background: #000;
+    opacity: 0;
+    transition: .15s;
+
+    &.active {
+      opacity: 1;
+    }
   }
 }
