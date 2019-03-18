@@ -59,8 +59,8 @@ if (document.querySelector('[data-menu="container"]')) {
             loopedSlides: 2,
 
             navigation: {
-                // nextEl: thumbsNext,
-                // prevEl: thumbsPrev,
+                nextEl: '[data-slider="btn-next"]',
+                prevEl: '[data-slider="btn-prev"]'
             }
         });
 

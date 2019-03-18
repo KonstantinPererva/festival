@@ -1,0 +1,125 @@
+.jury {
+  padding: 3.3% 0 0;
+}
+
+.jury-detail {
+  &-apple {
+    position: absolute;
+    top: 240px;
+    left: 2%;
+    display: block;
+    padding: 10% 0 0 10%;
+    background: url(../images/apple.png) no-repeat center / contain;
+  }
+
+  &-balloon {
+    position: absolute;
+    bottom: 10%;
+    right: -3%;
+    display: block;
+    padding: 10% 0 0 10%;
+    background: url(../images/jury/balon.png) no-repeat center / contain;
+  }
+
+  &-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 60px 0 280px;
+    background: url("../images/jury/bg-juri.png") no-repeat center bottom -250px / contain;
+  }
+
+  &-img-list-wrapper {
+    flex-shrink: 0;
+    width: 436px;
+    height: 436px;
+    margin: 0;
+  }
+
+  &-img-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &-info-list-wrapper {
+    flex-shrink: 0;
+    width: 556px;
+    height: 436px;
+    margin: 0 0 0 60px;
+  }
+
+  &-info-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.jury-detail-info-card {
+
+  &-title {
+    width: 346px;
+    height: 80px;
+    background: url("../images/jury/title-orange.png") no-repeat center / contain;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+
+    &__text {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      font-family: $ff-bb;
+      font-size: 20px;
+      line-height: 23px;
+      color: #fff;
+    }
+  }
+
+  &-description {
+    padding: 30px 10px 15px;
+
+    &__text {
+      display: block;
+      font-size: 16px;
+      line-height: 23px;
+      color: #fff;
+      font-family: $ff-bb;
+    }
+  }
+}
+
+.jury-detail-info-navigation {
+  width: 346px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 5px;
+  padding: 0 0 30px;
+
+  &-btn {
+    display: block;
+    width: 64px;
+    height: 40px;
+    transition: .15s;
+    will-change: transform;
+
+    &:hover {
+      @media (hover: hover) {
+        cursor: pointer;
+        transform: scale3D(1.12,1.12,1.12);
+      }
+    }
+
+    &__prev {
+      background: url("../images/jury/arrow-prev.png") no-repeat center;
+    }
+
+    &__next {
+      background: url("../images/jury/arrow-next.png") no-repeat center;
+    }
+  }
+}

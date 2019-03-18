@@ -24,18 +24,18 @@
 
   &-wrapper {
     position: relative;
-    background: url(../../images/splash.png) no-repeat left -12% top 109% / 51%;
+    background: url(../images/splash.png) no-repeat left -12% top 109% / 51%;
 
     @media screen and (max-width: 1440px) {
-      background: url(../../images/splash.png) no-repeat left -30% top 109% / 51%;
+      background: url(../images/splash.png) no-repeat left -30% top 109% / 51%;
     }
 
     @media screen and (max-width: 767px) {
-      background: url(../../images/splash.png) no-repeat left 15% top 0%/54%
+      background: url(../images/splash.png) no-repeat left 15% top 0%/54%
     }
 
     @media screen and (max-width: 320px) {
-      background: url(../../images/splash.png) no-repeat left 15% top 0%/70%
+      background: url(../images/splash.png) no-repeat left 15% top 0%/70%
     }
 
     & .sign {
@@ -45,7 +45,7 @@
       right: 10%;
       display: block;
       padding: 5% 0 0 5%;
-      background: url(../../images/festival/sign.png) no-repeat center / contain;
+      background: url(../images/festival/sign.png) no-repeat center / contain;
 
       @media screen and (max-width: 767px) {
         padding: 10% 0 0 10%;
