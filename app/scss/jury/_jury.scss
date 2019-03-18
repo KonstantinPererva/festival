@@ -1,10 +1,28 @@
 .jury {
+  padding: 3.3% 0 0;
+
   &-list-wrapper {
+    position: relative;
     width: 1064px;
     margin: 0 auto;
+    padding: 0 0 60px;
+
+    @media screen and (max-width: 1260px) {
+      width: 798px;
+    }
+
+    @media screen and (max-width: 992px) {
+      width: 532px;
+    }
+
+    @media screen and (max-width: 640px) {
+      width: 266px;
+    }
   }
 
   &-list {
+    position: relative;
+    z-index: 1;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -23,6 +41,19 @@
     text-decoration: none;
     outline: none;
 
+    &:hover {
+      @media (hover: hover) {
+        & .jury-card__img {
+          outline: 2px solid #fff;
+          transform: scale3d(1.02,1.02,1.02);
+        }
+
+        & .jury-card-title__text {
+          color: $c-orange;
+        }
+      }
+    }
+
     &__wrap-img {
       width: 240px;
       height: 240px;
@@ -31,6 +62,9 @@
     &__img {
       max-width: 100%;
       max-height: 100%;
+      display: block;
+      transition: outline .15s, transform .25s;
+      will-change: transform;
     }
 
     &-title {
@@ -54,7 +88,40 @@
         line-height: 17px;
         font-family: $ff-bb;
         color: #000;
+        transition: .2s;
       }
     }
+  }
+
+  &-sign-big {
+    position: absolute;
+    top: 160px;
+    right: -40%;
+    display: block;
+    padding: 70% 0 0 70%;
+    background: url(../../images/jury/sign-big.png) no-repeat center / contain;
+  }
+
+  &-music {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -25%;
+    display: block;
+    padding: 15% 0 0 15%;
+    background: url(../../images/music.png) no-repeat center / contain;
+
+    @media screen and (max-width: 1366px) {
+      left: -12%;
+    }
+  }
+
+  &-flags-white {
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    display: block;
+    padding: 30% 0 0 30%;
+    background: url(../../images/jury/flags-white.png) no-repeat center / contain;
   }
 }

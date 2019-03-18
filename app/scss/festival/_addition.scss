@@ -8,7 +8,7 @@
     text-align: center;
     margin: 0 auto;
 
-    @media screen and (max-width: 640px) {
+    @media screen and (max-width: 767px) {
       width: 100%;
       padding: 0 15px;
       font-size: 15px;
@@ -21,8 +21,8 @@
     &_marg {
       margin-bottom: 30px;
 
-      @media screen and (max-width: 360px) {
-        margin-top: -80px;
+      @media screen and (max-width: 767px) {
+        margin: 50px 0;
       }
     }
 
@@ -30,39 +30,36 @@
       font-family: $ff-os;
     }
 
+    &_strong {
+      font-family: $ff-bb;
+    }
+
     &_bold {
       font-family: $ff-bb;
       padding: 0 0 30px;
 
-      @media screen and (max-width: 640px) {
+      @media screen and (max-width: 767px) {
         width: 100%;
         padding: 0 15px;
       }
     }
 
     &_white {
+      display: flex;
+      align-items: center;
       font-family: $ff-bb;
       background: url(../../images/festival/bg-field.png) no-repeat;
       background-size: 100%;
       padding: 70px 100px;
       color: #fff;
       margin-bottom: 20px;
+      min-height: 248px;
 
-      @media screen and (max-width: 640px) {
+      @media screen and (max-width: 767px) {
+        background: $c-pink;
         margin: 0;
-      }
-
-      @media screen and (max-width: 630px) {
-        background-size: 100% 100%;
-        padding: 92px 100px 132px;
-      }
-
-      @media screen and (max-width: 480px) {
-        padding: 106px 80px 150px;
-      }
-
-      @media screen and (max-width: 360px) {
-        padding: 120px 70px 190px;
+        padding: 50px 15px;
+        min-height: auto;
       }
     }
   }

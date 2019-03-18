@@ -30,3 +30,42 @@ if (document.querySelector('[data-menu="container"]')) {
     menuBtnOpen.addEventListener('click', menuOpen);
     menuBtnClose.addEventListener('click', menuClose);
 }
+
+//slider jury detail
+
+(function () {
+    var self = this;
+    self.sliderJuryImg = null;
+    self.sliderJuryInfo = null;
+
+    if (document.querySelector('[data-slider="img"]') && document.querySelector('[data-slider="info"]')) {
+        self.sliderJuryImg = new Swiper('[data-slider="img"]', {
+            spaceBetween: 10,
+            loop: true,
+            loopedSlides: 2,
+            slidesPerView: 1,
+
+            navigation: {
+                // nextEl: mainNext,
+                // prevEl: mainPrev,
+            },
+        });
+
+
+        self.sliderJuryInfo = new Swiper('[data-slider="info"]', {
+            spaceBetween: 10,
+            slidesPerView: 1,
+            loop: true,
+            loopedSlides: 2,
+
+            navigation: {
+                // nextEl: thumbsNext,
+                // prevEl: thumbsPrev,
+            }
+        });
+
+        self.sliderJuryImg.controller.control = self.sliderJuryInfo;
+        self.sliderJuryInfo.controller.control = self.sliderJuryImg;
+    }
+})();
+

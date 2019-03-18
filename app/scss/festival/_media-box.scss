@@ -19,7 +19,7 @@
         height: 460px;
       }
 
-      @media screen and (max-width: 540px) {
+      @media screen and (max-width: 767px) {
         height: auto;
       }
     }
@@ -77,14 +77,14 @@
       height: 460px;
     }
 
-    @media screen and (max-width: 540px) {
+    @media screen and (max-width: 767px) {
       height: auto;
     }
 
     &_right {
       float: left;
       background: url(../../images/festival/border-1.png) no-repeat;
-      background-size: 100%;
+      background-size: 100% 84%;
       width: 770px;
       padding-left: 312px;
       padding-right: 140px;
@@ -97,31 +97,23 @@
         margin-left: -260px;
       }
 
+      @media screen and (max-width: 1152px) {
+        padding-top: 96px;
+      }
+
       @media screen and (max-width: 1024px) {
         width: 704px;
-        margin: -90px auto 0;
+        margin: -50px auto 0;
         float: none;
-        padding: 123px 136px 116px 155px;
+        padding: 95px 136px 116px 155px;
       }
 
-      @media screen and (max-width: 640px) {
-        width: 100%;
-        padding: 116px 136px 116px 155px;
-      }
-
-      @media screen and (max-width: 540px) {
-        height: auto;
-        background-size: 100% 100%;
-      }
-
-      @media screen and (max-width: 480px) {
-        padding: 116px 90px 108px 112px;
-      }
-
-      @media screen and (max-width: 415px) {
-        padding: 20px 15px;
+      @media screen and (max-width: 767px) {
+        padding: 20px 15px 50px;
         background: none;
-        margin: 0 0 10px;
+        margin: 0;
+        height: auto;
+        width: 100%;
       }
     }
 
@@ -145,29 +137,17 @@
 
       @media screen and (max-width: 1024px) {
         width: 704px;
-        margin: -74px auto 0;
+        margin: -120px auto 0;
         float: none;
-        padding: 110px 140px 120px 112px;
+        padding: 160px 140px 120px 112px;
       }
 
-      @media screen and (max-width: 640px) {
-        width: 100%;
-        padding: 98px 140px 120px 112px;
-      }
-
-      @media screen and (max-width: 540px) {
-        height: auto;
-        background-size: 100% 100%;
-      }
-
-      @media screen and (max-width: 480px) {
-        padding: 104px 102px 120px 90px;
-      }
-
-      @media screen and (max-width: 415px) {
-        padding: 20px 15px;
+      @media screen and (max-width: 767px) {
+        padding: 20px 15px 50px;
         background: none;
-        margin: 0 0 10px;
+        margin: 0;
+        height: auto;
+        width: 100%;
       }
     }
   }
@@ -180,12 +160,12 @@
     font-size: 14px;
 
     @media screen and (max-width: 1440px) {
-      line-height: 28px;
+      line-height: 24px;
       font-size: 12px;
     }
 
     @media screen and (max-width: 1024px) {
-      font-size: 16px;
+      font-size: 14px;
     }
 
     @media screen and (max-width: 767px) {
@@ -205,12 +185,13 @@
     height: 280px;
     background: url(../../images/festival/arrow-big.png) no-repeat center;
     background-size: 100%;
-    bottom: 0;
+    bottom: -76px;
     left: -80px;
 
     @media screen and (max-width: 1680px) {
       width: 360px;
       height: 257px;
+      bottom: -40px;
     }
 
     @media screen and (max-width: 1440px) {
