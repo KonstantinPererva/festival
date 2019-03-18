@@ -1,6 +1,10 @@
 .jury {
   padding: 3.3% 0 0;
 
+  @media (max-width: 767px) {
+    padding: 2% 0 0;
+  }
+
   &-list-wrapper {
     position: relative;
     width: 1064px;
@@ -45,7 +49,6 @@
       @media (hover: hover) {
         & .jury-card__img {
           outline: 2px solid #fff;
-          transform: scale3d(1.02,1.02,1.02);
         }
 
         & .jury-card-title__text {
@@ -63,8 +66,7 @@
       max-width: 100%;
       max-height: 100%;
       display: block;
-      transition: outline .15s, transform .25s;
-      will-change: transform;
+      transition: outline .15s;
     }
 
     &-title {
@@ -88,7 +90,7 @@
         line-height: 17px;
         font-family: $ff-bb;
         color: #000;
-        transition: .2s;
+        transition: .15s;
       }
     }
   }
@@ -100,6 +102,12 @@
     display: block;
     padding: 70% 0 0 70%;
     background: url(../images/jury/sign-big.png) no-repeat center / contain;
+
+    @media screen and (max-width: 767px) {
+      right: -67%;
+      display: block;
+      padding: 130% 0 0 130%;
+    }
   }
 
   &-music {
@@ -113,6 +121,11 @@
 
     @media screen and (max-width: 1366px) {
       left: -12%;
+    }
+
+    @media screen and (max-width: 767px) {
+      left: -24%;
+      padding: 24% 0 0 24%;
     }
   }
 

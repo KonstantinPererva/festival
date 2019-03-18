@@ -1,5 +1,9 @@
 .jury {
   padding: 3.3% 0 0;
+
+  @media (max-width: 767px) {
+    padding: 2% 0 0;
+  }
 }
 
 .jury-detail {
@@ -10,6 +14,36 @@
     display: block;
     padding: 10% 0 0 10%;
     background: url(../images/apple.png) no-repeat center / contain;
+
+    @media (max-width: 1440px) {
+      top: 340px;
+      left: 0;
+    }
+
+    @media (max-width: 1280px) {
+      padding: 8% 0 0 8%;
+    }
+
+    @media (max-width: 1130px) {
+      left: 3%;
+      padding: 10% 0 0 10%;
+    }
+
+    @media (max-width: 767px) {
+      padding: 15% 0 0 15%;
+    }
+
+    @media (max-width: 414px) {
+      top: 400px;
+    }
+
+    @media (max-width: 375px) {
+      top: 372px;
+    }
+
+    @media (max-width: 320px) {
+      top: 320px;
+    }
   }
 
   &-balloon {
@@ -19,6 +53,12 @@
     display: block;
     padding: 10% 0 0 10%;
     background: url(../images/jury/balon.png) no-repeat center / contain;
+
+    @media (max-width: 767px) {
+      padding: 15% 0 0 15%;
+      bottom: 10px;
+      right: 5px;
+    }
   }
 
   &-wrapper {
@@ -27,6 +67,19 @@
     justify-content: center;
     padding: 60px 0 280px;
     background: url("../images/jury/bg-juri.png") no-repeat center bottom -250px / contain;
+
+    @media (max-width: 1440px) {
+      background: url("../images/jury/bg-juri.png") no-repeat center bottom -120px / contain;
+    }
+
+    @media (max-width: 1130px) {
+      display: block;
+      padding: 0 15px 60px;
+    }
+
+    @media (max-width: 767px) {
+      background: none;
+    }
   }
 
   &-img-list-wrapper {
@@ -34,6 +87,15 @@
     width: 436px;
     height: 436px;
     margin: 0;
+
+    @media (max-width: 1130px) {
+      margin: 0 auto 30px;
+    }
+
+    @media (max-width: 630px) {
+      width: 100%;
+      height: auto;
+    }
   }
 
   &-img-list {
@@ -42,11 +104,30 @@
     margin: 0;
   }
 
+  &-img-card {
+    &__img {
+      display: block;
+      width: 100%;
+    }
+  }
+
   &-info-list-wrapper {
     flex-shrink: 0;
     width: 556px;
     height: 436px;
     margin: 0 0 0 60px;
+
+    @media (max-width: 1130px) {
+      margin: 0 auto;
+    }
+
+    @media (max-width: 1024px) {
+      height: auto;
+    }
+
+    @media (max-width: 630px) {
+      width: 100%;
+    }
   }
 
   &-info-list{
@@ -66,6 +147,23 @@
     align-items: center;
     padding: 0 30px;
 
+    @media (max-width: 1130px) {
+      margin: 0 auto;
+    }
+
+    @media (max-width: 767px) {
+      width: 310px;
+      height: 68px;
+    }
+
+    @media (max-width: 414px) {
+      width: 100%;
+    }
+
+    @media (max-width: 320px) {
+      height: 64px;
+    }
+
     &__text {
       width: 100%;
       display: flex;
@@ -76,11 +174,25 @@
       font-size: 20px;
       line-height: 23px;
       color: #fff;
+
+      @media (max-width: 767px) {
+        font-size: 18px;
+        line-height: 21px;
+      }
+
+      @media (max-width: 320px) {
+        font-size: 16px;
+        line-height: 19px;
+      }
     }
   }
 
   &-description {
     padding: 30px 10px 15px;
+
+    @media (max-width: 767px) {
+      padding: 30px 0 15px;
+    }
 
     &__text {
       display: block;
@@ -88,6 +200,11 @@
       line-height: 23px;
       color: #fff;
       font-family: $ff-bb;
+
+      @media (max-width: 767px) {
+        font-size: 14px;
+        line-height: 25px;
+      }
     }
   }
 }
@@ -97,8 +214,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 5px;
   padding: 0 0 30px;
+
+  @media (max-width: 1130px) {
+    margin: 0 auto;
+  }
+
+  @media (max-width: 767px) {
+    width: 100%;
+  }
 
   &-btn {
     display: block;
@@ -106,12 +230,19 @@
     height: 40px;
     transition: .15s;
     will-change: transform;
+    outline: none;
+    user-select: none;
+    margin: 0 5px;
 
     &:hover {
       @media (hover: hover) {
         cursor: pointer;
         transform: scale3D(1.12,1.12,1.12);
       }
+    }
+
+    &:focus, &:active {
+      outline: none;
     }
 
     &__prev {

@@ -41,12 +41,56 @@
   }
 
   &__ico-wrap {
+    position: relative;
+    text-decoration: none;
+    outline: none;
     flex-shrink: 0;
     display: block;
     width: 36px;
+    transition: .15s;
+    
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 0;
+      background: $c-orange;
+      border-radius: 50%;
+      transition: .2s;
+      opacity: 0;
+      top: -50%;
+      bottom: -50%;
+      right: -50%;
+      left: -50%;
+      margin: auto;
+    }
 
-    @media (max-width: 1260px) {
-      width: 36px;
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-radius: 50%;
+      transition: .15s;
+      top: -50%;
+      bottom: -50%;
+      right: -50%;
+      left: -50%;
+      margin: auto;
+      animation: pulse 1.7s infinite;
+      box-shadow: 0 0 20px 0 rgba(255,143,28,1);
+    }
+    
+    &:hover {
+      @media (hover: hover) {
+        &:after {
+          width: 58px;
+          height: 58px;
+          opacity: 1;
+        }
+      }
     }
 
     @media (max-width: 767px) {
@@ -55,7 +99,78 @@
   }
 
   &__ico {
+    position: relative;
+    z-index: 1;
     display: block;
     width: 100%;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  10% {
+    opacity: .2;
+    width: 10px;
+    height: 10px;
+  }
+
+  20% {
+    opacity: .4;
+    width: 20px;
+    height: 20px;
+  }
+
+  30% {
+    opacity: .6;
+    width: 30px;
+    height: 30px;
+  }
+
+  40% {
+    opacity: .8;
+    width: 40px;
+    height: 40px;
+  }
+
+  50% {
+    opacity: 1;
+    width: 50px;
+    height: 50px;
+  }
+
+  60% {
+    opacity: .8;
+    width: 40px;
+    height: 40px;
+  }
+
+
+  70% {
+    opacity: .6;
+    width: 30px;
+    height: 30px;
+  }
+
+  80% {
+    opacity: .4;
+    width: 20px;
+    height: 20px;
+  }
+
+  90% {
+    opacity: .2;
+    width: 10px;
+    height: 10px;
+  }
+
+  100% {
+    opacity: 0;
+    width: 0;
+    height: 0;
   }
 }
