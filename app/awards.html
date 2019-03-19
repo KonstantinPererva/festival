@@ -8,12 +8,13 @@
   />
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color" content="#000000" />
-  <link rel="stylesheet" href="css/style-stage.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/style-rules.css">
 
-  <title>Главная</title>
+  <title>Про премію</title>
 </head>
 <body>
-<div class="wrapper wrapper_bg-red" data-page="wrapper">
+<div class="wrapper">
   <header class="header-fest">
     <div class="header-fest__hold">
       <div class="header-fest-logo">
@@ -26,7 +27,7 @@
         <nav class="header-fest-menu" data-menu="container">
           <ul class="header-fest-menu__list" data-menu="list">
             <li class="header-fest-menu__item">
-              <a href="awards.html" class="header-fest-menu__link">Про премiю</a>
+              <a href="awards.html" class="header-fest-menu__link active">Про премiю</a>
             </li>
 
             <li class="header-fest-menu__item">
@@ -77,64 +78,16 @@
     </div>
   </header>
 
-  <main class="main main_bg-wave">
-    <div class="title">
-      <div class="title-logo">
-        <img src="images/stage-white.png" alt="logo" class="title-logo__img">
-      </div>
-    </div>
+  <main class="main main_bg-pattern">
+    <div class="awards">
+      <div class="title-page-wrapper">
+        <span class="new new_rule"></span>
 
-    <div class="stage">
-      <span class="new new_stage"></span>
 
-      <span class="stage-apple"></span>
-
-      <span class="stage-heard"></span>
-
-      <div class="stage__video">
-        <div class="video">
-          <iframe src="https://www.youtube.com/embed/w6G26rLsryQ?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="encrypted-media" class="video__iframe"></iframe>
-        </div>
       </div>
 
-      <div class="timer">
-        <div class="timer-title">
-          <span class="timer-title__text">до наступного етапу залишилось:</span>
-        </div>
-
-        <ul class="js-timer">
-          <li class="js-timer__item">
-            <span class="days">00</span>
-
-            <p class="days_text">днів</p>
-          </li>
-
-          <li class="js-timer__separator"></li>
-
-          <li class="js-timer__item">
-            <span class="hours">00</span>
-
-            <p class="hours_text">годин</p>
-          </li>
-
-          <li class="js-timer__separator"></li>
-
-          <li class="js-timer__item">
-            <span class="minutes">00</span>
-
-            <p class="minutes_text">хвилин</p>
-          </li>
-
-          <li class="js-timer__separator"></li>
-
-          <li class="js-timer__item">
-            <span class="seconds">00</span>
-
-            <p class="seconds_text">секунд</p>
-          </li>
-        </ul>
-
-        <span class="timer-star"></span>
+      <div class="video-full">
+        <iframe src="https://www.youtube.com/embed/w6G26rLsryQ?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="encrypted-media" class="video-full__iframe"></iframe>
       </div>
     </div>
   </main>
@@ -220,31 +173,7 @@
   </footer>
 </div>
 
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/jquery.countdown.min.js"></script>
 <script src="js/main.js"></script>
-<script>
-    $('.js-timer').countdown({
-        // Target date
-        date: '04/18/2019 16:43:00',
-
-        // time zone
-        offset: '+2',
-
-        // Countdown text
-        days: 'днів',
-        day: 'день',
-        hours: 'годин',
-        hour: 'година',
-        minutes: 'хвилин',
-        minute: 'хвилина',
-        seconds: 'секунд',
-        second: 'секунда',
-
-    }, function () {
-        alert('Merry Christmas!');
-    });
-</script>
 </body>
 </html>
 
