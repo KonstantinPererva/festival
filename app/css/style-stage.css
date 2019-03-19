@@ -558,25 +558,25 @@ html, body {
         -webkit-background-size: 23% 23%;
                 background-size: 23%; } }
 
-.awards {
+.stage {
   position: relative;
   max-width: 1433px;
   margin: 0 auto; }
-  .awards__video {
+  .stage__video {
     margin-top: -80px; }
     @media (max-width: 1440px) {
-      .awards__video {
+      .stage__video {
         width: 70%;
         margin: -80px auto 0; } }
     @media (max-width: 992px) {
-      .awards__video {
+      .stage__video {
         width: auto;
         padding: 0 30px; } }
     @media (max-width: 767px) {
-      .awards__video {
+      .stage__video {
         margin-top: 0;
         padding: 0; } }
-  .awards-apple {
+  .stage-apple {
     position: absolute;
     top: -30%;
     right: -15%;
@@ -585,12 +585,12 @@ html, body {
     -webkit-background-size: contain;
             background-size: contain; }
     @media (max-width: 1440px) {
-      .awards-apple {
+      .stage-apple {
         right: 2%; } }
     @media (max-width: 767px) {
-      .awards-apple {
+      .stage-apple {
         top: -25%; } }
-  .awards-heard {
+  .stage-heard {
     position: absolute;
     top: -15%;
     right: 25%;
@@ -599,7 +599,7 @@ html, body {
     -webkit-background-size: contain;
             background-size: contain; }
     @media (max-width: 992px) {
-      .awards-heard {
+      .stage-heard {
         right: 20%; } }
 
 .title {
@@ -626,7 +626,7 @@ html, body {
 .new {
   -webkit-animation: rotation 20s ease-in-out infinite;
           animation: rotation 20s ease-in-out infinite; }
-  .new_awards {
+  .new_stage {
     display: block;
     position: absolute;
     top: -30%;
@@ -636,23 +636,23 @@ html, body {
     -webkit-background-size: contain;
             background-size: contain; }
     @media (max-width: 1440px) {
-      .new_awards {
+      .new_stage {
         top: -25%;
         left: 3%;
         padding: 15% 0 0 25%; } }
     @media (max-width: 1152px) {
-      .new_awards {
+      .new_stage {
         top: -31%; } }
     @media (max-width: 1100px) {
-      .new_awards {
+      .new_stage {
         top: -26%; } }
     @media (max-width: 992px) {
-      .new_awards {
+      .new_stage {
         padding: 20% 0 0 33%;
         top: -27%;
         left: -1%; } }
     @media (max-width: 767px) {
-      .new_awards {
+      .new_stage {
         position: relative;
         top: auto;
         left: auto;
