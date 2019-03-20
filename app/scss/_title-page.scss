@@ -26,6 +26,14 @@
       @media (max-width: 1152px) {
         height: 380px;
       }
+
+      @media (max-width: 992px) {
+        height: 320px;
+      }
+
+      @media (max-width: 767px) {
+        padding: 0;
+      }
     }
 
     @media (max-width: 767px) {

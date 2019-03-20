@@ -779,6 +779,12 @@ html, body {
     @media (max-width: 1152px) {
       .title-page-wrapper_premium {
         height: 380px; } }
+    @media (max-width: 992px) {
+      .title-page-wrapper_premium {
+        height: 320px; } }
+    @media (max-width: 767px) {
+      .title-page-wrapper_premium {
+        padding: 0; } }
   @media (max-width: 767px) {
     .title-page-wrapper {
       display: block;

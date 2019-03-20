@@ -15,7 +15,12 @@
     background: url(../images/splash.png) no-repeat right -130px bottom -418px/60%, url(../images/bg-awards.png) no-repeat center bottom/auto;
   }
 
+  @media (max-width: 992px) {
+    background: url(../images/splash.png) no-repeat right -130px bottom -230px/60%, url(../images/bg-awards.png) no-repeat center bottom/auto 30%;
+  }
+
   @media (max-width: 767px) {
+    background: transparent;
   }
 
   &-logo {
@@ -27,12 +32,26 @@
       padding: 20% 0 0 46%;
     }
 
+    @media (max-width: 992px) {
+      padding: 23% 0 0 52%;
+    }
+
+    @media (max-width: 767px) {
+      width: 86%;
+      margin: 0 auto;
+      padding: 0;
+    }
+
     &__img {
       width: 100%;
       display: block;
       position: absolute;
       top: 0;
       left: 0;
+
+      @media (max-width: 767px) {
+        position: relative;
+      }
     }
   }
 
@@ -41,21 +60,51 @@
     height: 380px;
     background: url("../images/bg-awards-orange.png") repeat-x center;
 
+    @media (max-width: 992px) {
+      height: auto;
+      display: block;
+      background: transparent;
+    }
+
     &__left {
       flex: 1 0 50%;
       height: 100%;
       background: url("../images/photo-group-full.png") no-repeat right center;
+
+      @media (max-width: 992px) {
+        background: url("../images/photo-group.jpg") no-repeat center bottom / contain;
+        padding: 36% 0 0 100%;
+      }
     }
 
     &__right {
       flex: 1 0 50%;
       padding: 23px 23px 0;
+
+      @media (max-width: 992px) {
+        padding: 23px;
+        background: url("../images/bg-awards-orange.png") repeat-x center / cover;
+      }
+
+      @media (max-width: 767px) {
+        padding: 23px 0;
+        background: $c-orange;
+      }
     }
 
     &-descr {
       max-width: 496px;
       width: 100%;
       padding: 23px 23px 0;
+
+      @media (max-width: 992px) {
+        padding: 23px;
+        margin: 0 auto;
+      }
+
+      @media (max-width: 767px) {
+        padding: 23px 30px;
+      }
 
       &__text {
         display: block;
@@ -66,6 +115,14 @@
 
         @media (max-width: 1024px) {
           font-size: 16px;
+        }
+
+        @media (max-width: 1024px) {
+          text-align: center;
+        }
+
+        @media (max-width: 767px) {
+          font-size: 14px;
         }
       }
     }
@@ -82,6 +139,14 @@
       padding: 0 60px 60px;
     }
 
+    @media (max-width: 992px) {
+      padding: 0 30px 60px;
+    }
+
+    @media (max-width: 767px) {
+      padding: 0 15px 60px;
+    }
+
     &__text {
       display: block;
       text-align: center;
@@ -89,6 +154,14 @@
       font-size: 18px;
       line-height: 30px;
       color: #fff;
+
+      @media (max-width: 992px) {
+        font-size: 16px;
+      }
+
+      @media (max-width: 767px) {
+        font-size: 14px;
+      }
 
       &_black {
         color: #000;
@@ -106,6 +179,14 @@
       @media (max-width: 1024px) {
         padding: 115px 60px 0;
       }
+
+      @media (max-width: 992px) {
+        padding: 115px 30px 0;
+      }
+
+      @media (max-width: 767px) {
+        padding: 46px 15px 0;
+      }
     }
 
     &-panel {
@@ -121,6 +202,12 @@
       background: url(../images/title-photo.png) no-repeat center / contain;
       padding: 20px 30px 0 70px;
 
+      @media (max-width: 767px) {
+        width: 290px;
+        height: 96px;
+        position: static;
+      }
+
       &__text {
         display: block;
         font-family: $ff-bb;
@@ -128,6 +215,11 @@
         line-height: 29px;
         color: #000;
         transform: rotate(-5deg);
+
+        @media (max-width: 767px) {
+          font-size: 16px;
+          line-height: 22px;
+        }
       }
     }
 
@@ -138,6 +230,12 @@
       width: 138px;
       display: flex;
       align-items: center;
+
+      @media (max-width: 767px) {
+        position: static;
+        padding: 30px 0 0;
+        margin: 0 auto;
+      }
 
       &-btn {
         display: block;
@@ -169,6 +267,10 @@
 
     &-container {
       padding: 30px 0;
+
+      @media (max-width: 767px) {
+        padding: 15px 0;
+      }
     }
 
     &-list {
@@ -196,9 +298,26 @@
       padding: 180px 60px 420px;
     }
 
+    @media (max-width: 992px) {
+      padding: 150px 30px 420px;
+    }
+
+    @media (max-width: 767px) {
+      display: block;
+      padding: 90px 15px;
+    }
+
     &__wrap-ico {
       flex-shrink: 0;
       width: 250px;
+
+      @media (max-width: 992px) {
+        width: 180px;
+      }
+
+      @media (max-width: 767px) {
+        margin: 0 auto;
+      }
     }
 
     &__ico {
@@ -219,6 +338,15 @@
         @media (max-width: 1024px) {
           font-size: 22px;
         }
+
+        @media (max-width: 992px) {
+          font-size: 16px;
+        }
+
+        @media (max-width: 767px) {
+          text-align: center;
+          font-size: 14px;
+        }
       }
     }
   }
@@ -230,16 +358,37 @@
 
     &-wrapper {
       padding: 0 60px;
+
+      @media (max-width: 992px) {
+        padding: 0 30px;
+      }
+
+      @media (max-width: 767px) {
+        padding: 30px;
+        background: $c-pink;
+      }
     }
 
     &-title {
       line-height: 26px;
       width: 800px;
 
+      @media (max-width: 992px) {
+        width: auto;
+      }
+
       &__text {
         font-family: $ff-bb;
         font-size: 26px;
         color: #000;
+
+        @media (max-width: 992px) {
+          font-size: 20px;
+        }
+
+        @media (max-width: 767px) {
+          font-size: 16px;
+        }
         
         &_white {
           color: #fff;
@@ -275,6 +424,14 @@
         font-size: 18px;
         color: #000;
 
+        @media (max-width: 992px) {
+          font-size: 16px;
+        }
+
+        @media (max-width: 767px) {
+          font-size: 14px;
+        }
+
         &_strong {
           color: #fff;
         }
@@ -292,8 +449,18 @@
     flex-direction: column;
     justify-content: center;
 
+    @media (max-width: 767px) {
+      width: 100%;
+      height: 340px;
+      background: url("../images/title-black-big.png") no-repeat center/100% 100%;
+    }
+
     &-wrapper {
       padding: 30px 0;
+
+      @media (max-width: 767px) {
+        padding: 50px 15px 0;
+      }
     }
 
     &__text {
@@ -304,9 +471,25 @@
       color: #fff;
       text-align: center;
 
+      @media (max-width: 992px) {
+        font-size: 17px;
+      }
+
+      @media (max-width: 767px) {
+        font-size: 14px;
+      }
+
       &_big {
         font-size: 33px;
         line-height: 31px;
+
+        @media (max-width: 992px) {
+          font-size: 31px;
+        }
+
+        @media (max-width: 337px) {
+          font-size: 24px;
+        }
       }
     }
   }
