@@ -407,16 +407,24 @@
       line-height: 26px;
       padding: 0 0 0 40px;
 
+      @media (max-width: 767px) {
+        padding: 0 0 0 30px;
+      }
+
       &:before {
         content: '';
         position: absolute;
         top: 0;
         left: 0;
         vertical-align: top;
-        margin: 0 15px 0 0;
-        background: url(../images/star-white-small.png) no-repeat center;
-        width: 26px;
-        height: 26px;
+        margin: 0;
+        background: url(../images/star-white-small.png) no-repeat center / contain;
+        width: 20px;
+        height: 20px;
+
+        @media (max-width: 767px) {
+          top: 3px;
+        }
       }
 
       &__text {
@@ -487,7 +495,7 @@
           font-size: 31px;
         }
 
-        @media (max-width: 337px) {
+        @media (max-width: 767px) {
           font-size: 24px;
         }
       }
