@@ -1,0 +1,347 @@
+.premium {
+  padding: 3.3% 0 80px;
+  background: url(../images/splash.png) no-repeat right -130px bottom -700px/60%, url(../images/bg-awards.png) no-repeat center bottom/auto;
+
+  @media (max-width: 1440px) {
+    padding: 2% 0 80px;
+    background: url(../images/splash.png) no-repeat right -130px bottom -550px/60%, url(../images/bg-awards.png) no-repeat center bottom/auto;
+  }
+
+  @media (max-width: 1366px) {
+    background: url(../images/splash.png) no-repeat right -130px bottom -500px/60%, url(../images/bg-awards.png) no-repeat center bottom/auto;
+  }
+
+  @media (max-width: 1280px) {
+    background: url(../images/splash.png) no-repeat right -130px bottom -418px/60%, url(../images/bg-awards.png) no-repeat center bottom/auto;
+  }
+
+  @media (max-width: 767px) {
+  }
+
+  &-logo {
+    flex: 0 0 0;
+    position: relative;
+    padding: 18% 0 0 40%;
+
+    @media (max-width: 1024px) {
+      padding: 20% 0 0 46%;
+    }
+
+    &__img {
+      width: 100%;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &-notification {
+    display: flex;
+    height: 380px;
+    background: url("../images/bg-awards-orange.png") repeat-x center;
+
+    &__left {
+      flex: 1 0 50%;
+      height: 100%;
+      background: url("../images/photo-group-full.png") no-repeat right center;
+    }
+
+    &__right {
+      flex: 1 0 50%;
+      padding: 23px 23px 0;
+    }
+
+    &-descr {
+      max-width: 496px;
+      width: 100%;
+      padding: 23px 23px 0;
+
+      &__text {
+        display: block;
+        font-family: $ff-bb;
+        font-size: 18px;
+        line-height: 26px;
+        color: #000;
+
+        @media (max-width: 1024px) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  &-history {
+    position: relative;
+    z-index: 1;
+    max-width: 990px;
+    margin: 0 auto;
+    padding: 0 0 60px;
+
+    @media (max-width: 1024px) {
+      padding: 0 60px 60px;
+    }
+
+    &__text {
+      display: block;
+      text-align: center;
+      font-family: $ff-bb;
+      font-size: 18px;
+      line-height: 30px;
+      color: #fff;
+
+      &_black {
+        color: #000;
+      }
+    }
+  }
+
+  &-photo-gallery {
+    &-wrapper {
+      max-width: 990px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 115px 0 0;
+
+      @media (max-width: 1024px) {
+        padding: 115px 60px 0;
+      }
+    }
+
+    &-panel {
+      position: relative;
+      padding: 0 0 20px;
+    }
+
+    &-title {
+      position: relative;
+      left: -30px;
+      width: 390px;
+      height: 112px;
+      background: url(../images/title-photo.png) no-repeat center / contain;
+      padding: 20px 30px 0 70px;
+
+      &__text {
+        display: block;
+        font-family: $ff-bb;
+        font-size: 25px;
+        line-height: 29px;
+        color: #000;
+        transform: rotate(-5deg);
+      }
+    }
+
+    &-navigation {
+      position: absolute;
+      top: 30px;
+      right: 0;
+      width: 138px;
+      display: flex;
+      align-items: center;
+
+      &-btn {
+        display: block;
+        width: 64px;
+        height: 40px;
+        transition: .15s;
+        will-change: transform;
+        outline: none;
+        user-select: none;
+
+        &:hover {
+          @media (hover: hover) {
+            cursor: pointer;
+            transform: scale3D(1.12, 1.12, 1.12);
+          }
+        }
+
+        &__prev {
+          background: url(../images/arrow-prev.png) no-repeat center;
+          margin: 0 5px 0 0;
+        }
+
+        &__next {
+          background: url(../images/arrow-next.png) no-repeat center;
+          margin: 0 0 0 5px;
+        }
+      }
+    }
+
+    &-container {
+      padding: 30px 0;
+    }
+
+    &-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    &-item {
+      &__img {
+        width: 100%;
+        display: block;
+      }
+    }
+  }
+
+  &-prompt {
+    max-width: 1080px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    padding: 180px 15px 420px;
+
+    @media (max-width: 1024px) {
+      padding: 180px 60px 420px;
+    }
+
+    &__wrap-ico {
+      flex-shrink: 0;
+      width: 250px;
+    }
+
+    &__ico {
+      display: block;
+      width: 100%;
+    }
+
+    &-descr {
+      padding: 0 10px;
+
+      &__text {
+        display: block;
+        font-family: $ff-bb;
+        font-size: 26px;
+        line-height: 30px;
+        color: #fff;
+
+        @media (max-width: 1024px) {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+
+  &-condition {
+    max-width: 990px;
+    width: 100%;
+    margin: 0 auto;
+
+    &-wrapper {
+      padding: 0 60px;
+    }
+
+    &-title {
+      line-height: 26px;
+      width: 800px;
+
+      &__text {
+        font-family: $ff-bb;
+        font-size: 26px;
+        color: #000;
+        
+        &_white {
+          color: #fff;
+        }
+      }
+    }
+
+    &-list {
+      list-style: none;
+      padding: 30px 0;
+      margin: 0;
+    }
+
+    &-item {
+      position: relative;
+      line-height: 26px;
+      padding: 0 0 0 40px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        vertical-align: top;
+        margin: 0 15px 0 0;
+        background: url(../images/star-white-small.png) no-repeat center;
+        width: 26px;
+        height: 26px;
+      }
+
+      &__text {
+        font-family: $ff-bb;
+        font-size: 18px;
+        color: #000;
+
+        &_strong {
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  &-info {
+    width: 502px;
+    height: 272px;
+    margin: 0 auto;
+    background: url("../images/title-black-big.png") no-repeat center / contain;
+    padding: 20px 46px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &-wrapper {
+      padding: 30px 0;
+    }
+
+    &__text {
+      display: block;
+      font-family: $ff-bb;
+      font-size: 19px;
+      line-height: 25px;
+      color: #fff;
+      text-align: center;
+
+      &_big {
+        font-size: 33px;
+        line-height: 31px;
+      }
+    }
+  }
+
+  &-apple {
+    position: absolute;
+    top: 44%;
+    right: -28%;
+    display: block;
+    padding: 20% 0 0 20%;
+    background: url(../images/apple.png) no-repeat center / contain;
+
+    @media (max-width: 1280px) {
+      right: -18%;
+    }
+
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  &-smile {
+    position: absolute;
+    top: -44%;
+    left: -28%;
+    display: block;
+    padding: 15% 0 0 15%;
+    background: url(../images/smile.png) no-repeat center / contain;
+
+    @media (max-width: 1280px) {
+      left: -18%;
+    }
+
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+}

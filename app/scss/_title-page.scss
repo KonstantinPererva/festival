@@ -6,6 +6,28 @@
     align-items: center;
     height: 250px;
 
+    &_premium {
+      height: 520px;
+      align-items: flex-end;
+      padding: 0 0 60px;
+
+      @media (max-width: 1440px) {
+        height: 450px;
+      }
+
+      @media (max-width: 1366px) {
+        height: 430px;
+      }
+
+      @media (max-width: 1280px) {
+        height: 420px;
+      }
+
+      @media (max-width: 1152px) {
+        height: 380px;
+      }
+    }
+
     @media (max-width: 767px) {
       display: block;
       height: auto;

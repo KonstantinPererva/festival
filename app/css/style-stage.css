@@ -303,6 +303,8 @@ html, body {
             background-size: 50%; }
   .wrapper_bg-jury {
     background: #e03e52; }
+  .wrapper_bg-c-red {
+    background: #e03e52; }
 
 .header-fest {
   -webkit-flex-shrink: 0;

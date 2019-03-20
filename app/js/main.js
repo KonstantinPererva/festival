@@ -44,11 +44,6 @@ if (document.querySelector('[data-menu="container"]')) {
             loop: true,
             loopedSlides: 2,
             slidesPerView: 1,
-
-            navigation: {
-                // nextEl: mainNext,
-                // prevEl: mainPrev,
-            },
         });
 
 
@@ -68,4 +63,20 @@ if (document.querySelector('[data-menu="container"]')) {
         self.sliderJuryInfo.controller.control = self.sliderJuryImg;
     }
 })();
+
+
+//slider jury detail
+
+if (document.querySelector('[data-slider="premium-photo-gallery"]')) {
+    var premiumPhotoGallery = new Swiper('[data-slider="premium-photo-gallery"]', {
+        spaceBetween: 10,
+        slidesPerView: 1,
+        loop: true,
+
+        navigation: {
+            nextEl: '[data-slider="btn-photo-gallery-next"]',
+            prevEl: '[data-slider="btn-photo-gallery-prev"]'
+        }
+    });
+}
 
