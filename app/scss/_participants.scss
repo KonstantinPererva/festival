@@ -222,6 +222,10 @@
     display: flex;
     flex-wrap: wrap;
 
+    @media (max-width: 767px) {
+      justify-content: center;
+    }
+
     &-wrapper {
       position: relative;
       max-width: 1086px;
@@ -244,13 +248,7 @@
       }
 
       @media (max-width: 767px) {
-        max-width: 346px;
-        padding: 60px 0 30px;
-        min-height: auto;
-      }
-
-      @media (max-width: 374px) {
-        max-width: 290px;
+        max-width: none;
         padding: 60px 0 30px;
         min-height: auto;
       }
@@ -281,7 +279,7 @@
 
     @media (max-width: 374px) {
       width: 290px;
-      height: 290px;
+      height: auto;
     }
 
     &:focus, &:active {
@@ -323,7 +321,7 @@
       background: $c-red;
       opacity: 0;
       transition: .16s;
-      padding: 15px;
+      padding: 15px 20px;
       z-index: 1;
 
       @media (max-width: 1024px) {
@@ -333,8 +331,11 @@
 
     &-name {
       display: block;
-      min-height: 46px;
+      margin: 0 0 30px;
 
+      @media (max-width: 1024px) {
+        margin: 0 0 15px;
+      }
 
       &__text {
         display: block;
