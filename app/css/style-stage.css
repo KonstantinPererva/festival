@@ -291,7 +291,8 @@ html, body {
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  background: #fff; }
   @media (max-width: 1130px) {
     .wrapper {
       padding: 60px 0 0; } }

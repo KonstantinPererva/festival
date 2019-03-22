@@ -75,6 +75,22 @@
     }
   }
 
+  &_orange {
+    flex-shrink: 0;
+    width: 285px;
+    height: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../images/title-orange.png) no-repeat center;
+    background-size: contain;
+    margin: 0 auto;
+
+    & .title-page__text {
+      color: #000;
+    }
+  }
+
   &__text {
     font-size: 30px;
     line-height: 34px;
