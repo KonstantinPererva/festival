@@ -1027,7 +1027,8 @@ html, body {
               transform: scale3d(1.25, 1.25, 1.25); } }
   .soc-net-link__ico {
     display: block;
-    width: 25px; }
+    width: 25px;
+    max-height: 25px; }
   .soc-net-link__img {
     display: block;
     max-width: 100%;
