@@ -114,15 +114,10 @@
   &-info-list-wrapper {
     flex-shrink: 0;
     width: 556px;
-    height: 436px;
     margin: 0 0 0 60px;
 
     @media (max-width: 1130px) {
       margin: 0 auto;
-    }
-
-    @media (max-width: 1024px) {
-      height: auto;
     }
 
     @media (max-width: 630px) {

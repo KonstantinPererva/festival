@@ -15,22 +15,68 @@
     }
 
     &_premium {
-      height: inherit;
+      height: 520px;
       align-items: flex-end;
       padding: 0 0 60px;
 
+      @media (max-width: 1440px) {
+        height: 450px;
+      }
+
+      @media (max-width: 1366px) {
+        height: 430px;
+      }
+
+      @media (max-width: 1280px) {
+        height: 420px;
+      }
+
+      @media (max-width:  1152px) {
+        height: 380px;
+      }
+
+      @media (max-width:  992px) {
+        height: 320px;
+      }
+
       @media (max-width: 767px) {
-        padding: 0;
+        display: block;
+        height: auto;
+        margin: 0;
+        padding: 0 0 50px;
       }
     }
 
     &_stage {
-      height: inherit;
+      height: 510px;
       align-items: flex-end;
       padding: 0 0 60px;
 
+      @media (max-width: 1440px) {
+        height: 420px;
+      }
+
+      @media (max-width: 1366px) {
+        height: 430px;
+      }
+
+      @media (max-width: 1280px) {
+        height: 420px;
+      }
+
+      @media (max-width:  1152px) {
+        height: 350px;
+      }
+
+      @media (max-width:  992px) {
+        height: 286px;
+      }
+
       @media (max-width: 767px) {
-        padding: 0;
+        display: block;
+        height: auto;
+        margin: 0;
+        padding: 0 0 50px;
       }
     }
   }

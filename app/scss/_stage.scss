@@ -23,20 +23,22 @@
   &-logo {
     flex: 0 0 0;
     position: relative;
-    padding: 25% 0 0 25%;
+    padding: 23% 0 0 33%;
+
+    @media (max-width: 1440px) {
+      padding: 23% 0 0 34%;
+    }
 
     @media (max-width: 1024px) {
-      padding: 30% 0 0 30%;
+      padding: 25% 0 0 39%;
     }
 
     @media (max-width: 992px) {
-      padding: 30% 0 0 30%;
+      padding: 25% 0 0 39%;
     }
 
     @media (max-width: 767px) {
-      max-width: 356px;
-      margin: 0 auto;
-      padding: 0 30px;
+      padding: 0 15px;
     }
 
     &__img {
@@ -48,6 +50,8 @@
 
       @media (max-width: 767px) {
         position: relative;
+        max-width: 356px;
+        margin: 0 auto;
       }
     }
   }
@@ -58,57 +62,54 @@
     margin: 0 auto;
     padding: 0 60px;
 
+    @media (max-width:  992px) {
+      padding: 0 30px;
+    }
+
+    @media (max-width:  767px) {
+      padding: 0 15px;
+    }
+  }
+
+  &__video {
+
+    @media (max-width: 767px) {
+      margin-top: -128px;
+    }
+  }
+
+  &-apple {
+    position: absolute;
+    top: -30%;
+    right: -15%;
+    padding: 10% 0 0 10%;
+    background: url(../images/apple.png) no-repeat center;
+    background-size: contain;
+
     @media (max-width: 1440px) {
-      padding: 0;
+      right: 2%;
     }
 
-    &__video {
-      margin-top: -80px;
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
 
-      @media (max-width: 1440px) {
-        width: 70%;
-        margin: -80px auto 0;
-      }
+  &-heard{
+    position: absolute;
+    top: -12%;
+    right: 21%;
+    padding: 5% 0 0 5%;
+    background: url(../images/heart.png) no-repeat center;
+    background-size: contain;
 
-      @media (max-width: 992px) {
-        width: auto;
-        padding: 0 30px;
-      }
-
-      @media (max-width: 767px) {
-        margin-top: 0;
-        padding: 0;
-      }
+    @media (max-width: 992px) {
+      top: -10%;
+      right: 20%;
     }
 
-    &-apple {
-      position: absolute;
-      top: -30%;
-      right: -15%;
-      padding: 10% 0 0 10%;
-      background: url(../images/apple.png) no-repeat center;
-      background-size: contain;
-
-      @media (max-width: 1440px) {
-        right: 2%;
-      }
-
-      @media (max-width: 767px) {
-        top: -25%;
-      }
-    }
-
-    &-heard{
-      position: absolute;
-      top: -15%;
-      right: 25%;
-      padding: 5% 0 0 5%;
-      background: url(../images/heart.png) no-repeat center;
-      background-size: contain;
-
-      @media (max-width: 992px) {
-        right: 20%;
-      }
+    @media (max-width: 767px) {
+      display: none;
     }
   }
 }

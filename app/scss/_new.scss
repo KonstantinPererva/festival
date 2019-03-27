@@ -1,44 +1,6 @@
 .new {
   animation: rotation 20s ease-in-out infinite;
 
-  &_stage {
-    display: block;
-    position: absolute;
-    top: -30%;
-    left: -4%;
-    padding: 19% 0 0 30%;
-    background: url(../images/new.png) no-repeat center;
-    background-size: contain;
-
-    @media (max-width: 1440px) {
-      top: -25%;
-      left: 3%;
-      padding: 15% 0 0 25%;
-    }
-
-    @media (max-width: 1152px) {
-      top: -31%;
-    }
-
-    @media (max-width: 1100px) {
-      top: -26%;
-    }
-
-    @media (max-width: 992px) {
-      padding: 20% 0 0 33%;
-      top: -27%;
-      left: -1%;
-    }
-
-    @media (max-width: 767px) {
-      position: relative;
-      top: auto;
-      left: auto;
-      padding: 70px;
-      margin: -30px 0 30px;
-    }
-  }
-
   &_rule {
     display: block;
     position: absolute;
@@ -55,6 +17,32 @@
 
     @media (max-width: 1024px) {
       left: 10px;
+      padding: 20% 0 0 33%;
+    }
+
+    @media (max-width: 767px) {
+      display: block;
+      position: relative;
+      top: auto;
+      left: auto;
+      padding: 70px;
+      margin: 30px 0;
+    }
+  }
+
+  &_stage {
+    display: block;
+    position: absolute;
+    left: 8%;
+    top: 34%;
+    margin: 0 30px 0 0;
+    padding: 15% 0 0 25%;
+    background: url(../images/new.png) no-repeat center;
+    background-size: contain;
+
+    @media (max-width: 1024px) {
+      left: 0;
+      top: 30%;
       padding: 20% 0 0 33%;
     }
 
